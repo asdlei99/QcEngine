@@ -1,0 +1,94 @@
+<Player class="QcResPlayerDesc">
+  <!--<Element name="TrackFlagList" ListClass="QcResImageListDesc" class="QcResImageDesc" Begin="1" End="10"/>-->
+  <Element name="TrackFlagList2" ListClass="QcResImageListDesc" class="QcResImageDesc" Begin="1" End="10">
+    <Attribute class="QcSceneAnimation"/>
+  </Element>
+  
+  <!--炮台框-->
+  <definition name="SuperFort" class="QcResImageDesc"/>
+  <definition name="Fort" class="QcResImageDesc"/>
+  <definition name="EnergyGunEffect" class="QcResImageDesc">
+    <states>
+      <state name="Living" time="1" iscycle="1"/>
+      <state name="Dying" time="1" iscycle="1"/>
+    </states>
+  </definition>
+  <!--分数框-->
+  <Element name="ScoreFrame" class="QcResImageDesc">
+    <Attribute class="QcSceneDigital"/>
+    <states>
+      <state name="Living" time="1" iscycle="0"/>
+    </states>
+    <Parameter>
+      <String DigitalRes="ScoreFrameDigital"/>
+    </Parameter>
+  </Element>
+  <!--炮值分数框-->
+  <Element name="GunLevelFort" class="QcResImageDesc">
+    <Attribute class="QcSceneDigital"/>
+    <Parameter>
+      <String DigitalRes="GunLevelDigital"/>
+    </Parameter>
+  </Element>
+  
+  <Player name="Player1">
+    <Attribute ColorFlag="51,60,188,255" Fort="Fort" SuperFort="SuperFort" GunLevelFort="GunLevelFort" ScoreFrame="ScoreFrame" Flag="TrackFlagList2_01" MovingFlag="TrackFlagList2_01"  GoldColumn="GoldColumn"/>
+  </Player>
+  <Player name="Player2">
+    <Attribute ColorFlag="177,97,14" Fort="Fort" SuperFort="SuperFort" GunLevelFort="GunLevelFort" ScoreFrame="ScoreFrame" Flag="TrackFlagList2_02" MovingFlag="TrackFlagList2_02"  GoldColumn="GoldColumn"/>
+  </Player>
+  <Player name="Player3">
+    <Attribute ColorFlag="105,182,65" Fort="Fort" SuperFort="SuperFort" GunLevelFort="GunLevelFort" ScoreFrame="ScoreFrame" Flag="TrackFlagList2_03" MovingFlag="TrackFlagList2_03" GoldColumn="GoldColumn"/>
+  </Player>
+  <Player name="Player4">
+    <Attribute ColorFlag="223,70,180" Fort="Fort" SuperFort="SuperFort" GunLevelFort="GunLevelFort" ScoreFrame="ScoreFrame" Flag="TrackFlagList2_04" MovingFlag="TrackFlagList2_04" GoldColumn="GoldColumn"/>
+  </Player>
+  <Player name="Player5">
+    <Attribute ColorFlag="230,197,30" Fort="Fort" SuperFort="SuperFort" GunLevelFort="GunLevelFort" ScoreFrame="ScoreFrame" Flag="TrackFlagList2_05" MovingFlag="TrackFlagList2_05" GoldColumn="GoldColumn"/>
+  </Player>
+  <Player name="Player6">
+    <Attribute ColorFlag="238,74,36" Fort="Fort" SuperFort="SuperFort" GunLevelFort="GunLevelFort" ScoreFrame="ScoreFrame" Flag="TrackFlagList2_06" MovingFlag="TrackFlagList2_06" GoldColumn="GoldColumn"/>
+  </Player>
+  <Player name="Player7">
+    <Attribute ColorFlag="48,168,89" Fort="Fort" SuperFort="SuperFort" GunLevelFort="GunLevelFort" ScoreFrame="ScoreFrame" Flag="TrackFlagList2_07" MovingFlag="TrackFlagList2_07" GoldColumn="GoldColumn"/>
+  </Player>
+  <Player name="Player8">
+    <Attribute ColorFlag="203,44,141" Fort="Fort" SuperFort="SuperFort" GunLevelFort="GunLevelFort" ScoreFrame="ScoreFrame" Flag="TrackFlagList2_08" MovingFlag="TrackFlagList2_08" GoldColumn="GoldColumn"/>
+  </Player>
+  <Player name="Player9">
+    <Attribute ColorFlag="219,49,59" Fort="Fort" SuperFort="SuperFort" GunLevelFort="GunLevelFort" ScoreFrame="ScoreFrame" Flag="TrackFlagList2_09" MovingFlag="TrackFlagList2_09" GoldColumn="GoldColumn"/>
+  </Player>
+  <Player name="Player10">
+    <Attribute ColorFlag="45,155,169" Fort="Fort" SuperFort="SuperFort" GunLevelFort="GunLevelFort" ScoreFrame="ScoreFrame" Flag="TrackFlagList2_10" MovingFlag="TrackFlagList2_10" GoldColumn="GoldColumn"/>
+  </Player>
+  <Player name="Player11">
+    <Attribute ColorFlag="51,60,188,255" Fort="Fort" SuperFort="SuperFort" GunLevelFort="GunLevelFort" ScoreFrame="ScoreFrame" Flag="TrackFlagList2_01" MovingFlag="TrackFlagList2_01"  GoldColumn="GoldColumn"/>
+  </Player>
+  <Player name="Player12">
+    <Attribute ColorFlag="177,97,14" Fort="Fort" SuperFort="SuperFort" GunLevelFort="GunLevelFort" ScoreFrame="ScoreFrame" Flag="TrackFlagList2_02" MovingFlag="TrackFlagList2_02"  GoldColumn="GoldColumn"/>
+  </Player>
+  <Player name="Player13">
+    <Attribute ColorFlag="105,182,65" Fort="Fort" SuperFort="SuperFort" GunLevelFort="GunLevelFort" ScoreFrame="ScoreFrame" Flag="TrackFlagList2_03" MovingFlag="TrackFlagList2_03" GoldColumn="GoldColumn"/>
+  </Player>
+  <Player name="Player14">
+    <Attribute ColorFlag="223,70,180" Fort="Fort" SuperFort="SuperFort" GunLevelFort="GunLevelFort" ScoreFrame="ScoreFrame" Flag="TrackFlagList2_04" MovingFlag="TrackFlagList2_04" GoldColumn="GoldColumn"/>
+  </Player>
+  <Player name="Player15">
+    <Attribute ColorFlag="230,197,30" Fort="Fort" SuperFort="SuperFort" GunLevelFort="GunLevelFort" ScoreFrame="ScoreFrame" Flag="TrackFlagList2_05" MovingFlag="TrackFlagList2_05" GoldColumn="GoldColumn"/>
+  </Player>
+  <Player name="Player16">
+    <Attribute ColorFlag="238,74,36" Fort="Fort" SuperFort="SuperFort" GunLevelFort="GunLevelFort" ScoreFrame="ScoreFrame" Flag="TrackFlagList2_06" MovingFlag="TrackFlagList2_06" GoldColumn="GoldColumn"/>
+  </Player>
+  <Player name="Player17">
+    <Attribute ColorFlag="48,168,89" Fort="Fort" SuperFort="SuperFort" GunLevelFort="GunLevelFort" ScoreFrame="ScoreFrame" Flag="TrackFlagList2_07" MovingFlag="TrackFlagList2_07" GoldColumn="GoldColumn"/>
+  </Player>
+  <Player name="Player18">
+    <Attribute ColorFlag="203,44,141" Fort="Fort" SuperFort="SuperFort" GunLevelFort="GunLevelFort" ScoreFrame="ScoreFrame" Flag="TrackFlagList2_08" MovingFlag="TrackFlagList2_08" GoldColumn="GoldColumn"/>
+  </Player>
+  <Player name="Player19">
+    <Attribute ColorFlag="219,49,59" Fort="Fort" SuperFort="SuperFort" GunLevelFort="GunLevelFort" ScoreFrame="ScoreFrame" Flag="TrackFlagList2_09" MovingFlag="TrackFlagList2_09" GoldColumn="GoldColumn"/>
+  </Player>
+  <Player name="Player20">
+    <Attribute ColorFlag="45,155,169" Fort="Fort" SuperFort="SuperFort" GunLevelFort="GunLevelFort" ScoreFrame="ScoreFrame" Flag="TrackFlagList2_10" MovingFlag="TrackFlagList2_10" GoldColumn="GoldColumn"/>
+  </Player>
+</Player>

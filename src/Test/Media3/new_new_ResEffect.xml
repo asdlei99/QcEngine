@@ -1,0 +1,11 @@
+ <SymbolList minus="-" colon=":"/>
+  </definition>
+  <definition name="DigitalSysTime">
+    <SymbolList minus="-" colon=":"/>
+  </definition>
+  <definition name="DigitalReBoot">
+    <SymbolList minus="-" colon=":"/>
+  </definition>
+  <definition name="CaiJinDigital">
+    <SymbolList minus="-" colon=":"/>
+  </defi

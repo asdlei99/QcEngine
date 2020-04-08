@@ -1,0 +1,284 @@
+    <subObject>
+      <object name="LessSelected"/>
+    </subObject>
+  </definition>
+  <definition name="SelectGreat">
+    <subObject>
+      <object name="GreatSelected"/>
+    </subObject>
+  </definition>
+  <definition name="GambleCounter">
+    <states>
+      <state name="Living" time="10" iscycle="0"/>
+    </states>
+  </definition>
+  <definition name="GambleOver" />
+  <definition name="LogoForAuto"/>
+</Image><Path>
+  <NormalScene>
+    <SmallFishPath>
+      <definition name="1001"/>
+      <definition name="1002"/>
+      <definition name="1003"/>
+      <definition name="1004"/>
+      <definition name="1005"/>
+      <definition name="1006"/>
+      <definition name="1008"/>
+      <definition name="1009"/>
+      <definition name="1011"/>
+      <definition name="1012"/>
+      <definition name="1013"/>
+      <definition name="1014"/>
+      <definition name="1015"/>
+      <definition name="1016"/>
+      <definition name="1017"/>
+      <definition name="1018"/>
+      <definition name="1019"/>
+      <definition name="1020"/>
+      <definition name="1021"/>
+      <definition name="1022"/>
+      <definition name="1023"/>
+      <definition name="1024"/>
+      <definition name="1025"/>
+      <definition name="1026"/>
+      <definition name="1027"/>
+      <definition name="1028"/>
+      <definition name="1029"/>
+      <definition name="1030"/>
+      <definition name="1031"/>
+      <definition name="1032"/>
+      <definition name="1034"/>
+      <definition name="1035"/>
+      <definition name="1036"/>
+      <definition name="1037"/>
+      <definition name="1038"/>
+      <definition name="1039"/>
+      <definition name="1040"/>
+      <definition name="1041"/>
+      <definition name="1042"/>
+      <definition name="1043"/>
+      <definition name="1044"/>
+      <definition name="1045"/>
+      <definition name="1046"/>
+      <definition name="1047"/>
+      <definition name="1048"/>
+      <definition name="1049"/>
+      <definition name="1050"/>
+      <definition name="1051"/>
+      <definition name="1052"/>
+      <definition name="1054"/>
+      <definition name="1055"/>
+      <definition name="1056"/>
+      <definition name="1057"/>
+      <definition name="1058"/>
+      <definition name="1059"/>
+      <definition name="1060"/>
+    </SmallFishPath>
+    <MiddleFishPath>
+      <definition name="2001"/>
+      <definition name="2002"/>
+      <definition name="2003"/>
+      <definition name="2004"/>
+      <definition name="2005"/>
+      <definition name="2006"/>
+      <definition name="2007"/>
+      <definition name="2008"/>
+      <definition name="2009"/>
+      <definition name="2010"/>
+      <definition name="2012"/>
+      <definition name="2013"/>
+      <definition name="2015"/>
+      <definition name="2016"/>
+      <definition name="2017"/>
+      <definition name="2018"/>
+      <definition name="2019"/>
+      <definition name="2020"/>
+    </MiddleFishPath>
+    <LargeFishPath>
+      <definition name="3001"/>
+      <definition name="3002"/>
+      <definition name="3003"/>
+      <definition name="3004"/>
+      <definition name="3005"/>
+      <definition name="3006"/>
+      <definition name="3007"/>
+      <definition name="3008"/>
+      <definition name="3009"/>
+      <definition name="3010"/>
+    </LargeFishPath>
+    <RegularPath>
+      <definition name="4010"/>
+      <definition name="4011"/>
+      <definition name="4012"/>
+      <definition name="4013"/>
+      <definition name="4014"/>
+      
+      <definition name="4020"/>
+      <definition name="4021"/>
+      <definition name="4022"/>
+      <definition name="4023"/>
+      <definition name="4024"/>
+      <definition name="4025"/>
+      <definition name="4026"/>
+
+      <definition name="4030"/>
+      <definition name="4031"/>
+
+      <definition name="4032"/>
+      <definition name="4033"/>
+      <definition name="4034"/>
+      <definition name="4035"/>
+      <definition name="4036"/>
+      <definition name="4037"/>
+      <definition name="4038"/>
+
+      <definition name="4039"/>
+      <definition name="4040"/>
+      <definition name="4041"/>
+      <definition name="4042"/>
+      <definition name="4043"/>
+      <definition name="4044"/>
+      <definition name="4045"/>
+      <definition name="4046"/>
+      <definition name="4047"/>
+      <definition name="4048"/>
+      <definition name="4049"/>
+      <definition name="4050"/>
+      <definition name="4051"/>
+      <definition name="4052"/>
+
+      <definition name="4053"/>
+      <definition name="4054"/>
+      <definition name="4055"/>
+      <definition name="4056"/>
+      <definition name="4057"/>
+      <definition name="4058"/>
+
+      <definition name="4059"/>
+      <definition name="4060"/>
+      <definition name="4061"/>
+      <definition name="4062"/>
+      <definition name="4063"/>
+      <definition name="4064"/>
+
+      <definition name="4065"/>
+      <definition name="4066"/>
+
+      <definition name="4100"/>
+      <definition name="4101"/>
+      <definition name="4102"/>
+      <definition name="4103"/>
+      <definition name="4104"/>
+      <definition name="4105"/>
+
+      <definition name="4106"/>
+      <definition name="4107"/>
+
+      <definition name="4108"/>
+      <definition name="4109"/>
+      <definition name="4110"/>
+      <definition name="4111"/>
+
+      <definition name="4112"/>
+      <definition name="4113"/>
+      <definition name="4114"/>
+      <definition name="4115"/>
+
+    </RegularPath>
+    <GroupPath>
+      <definition name="5001_01" RelatedPath="5001_02;5001_03"/>
+      <definition name="5002_01" RelatedPath="5002_02;5002_03"/>
+      <definition name="5003_01" RelatedPath="5003_02;5003_03"/>
+      <definition name="5004_01" RelatedPath="5004_02;5004_03"/>
+      <definition name="5005_01" RelatedPath="5005_02;5005_03"/>
+      <definition name="5006_01" RelatedPath="5006_02;5006_03"/>
+      <definition name="5007_01" RelatedPath="5007_02;5007_03"/>
+      <definition name="5008_01" RelatedPath="5008_02;5008_03"/>
+      <!--<definition name="5009_01" RelatedPath="5009_02;5009_03"/>-->
+      <definition name="5010_01" RelatedPath="5010_02;5010_03"/>
+      <definition name="5011_01" RelatedPath="5011_02;5011_03;5011_04"/>
+      <definition name="5012_01" RelatedPath="5012_02;5012_03"/>
+    </GroupPath>
+    <GroupPath2>
+      <definition name="6001_01" RelatedPath="6001_02;6001_03;6001_04"/>
+      <definition name="6002_01" RelatedPath="6002_02;6002_03;6002_04"/>
+      <definition name="6003_01" RelatedPath="6003_02;6003_03;6003_04;6003_05"/>
+      <definition name="6004_01" RelatedPath="6004_02;6004_03;6004_04;6004_05;"/>
+      <definition name="6005_01" RelatedPath="6005_02;6005_03;6005_04;6005_05;6005_06"/>
+      <definition name="6006_01" RelatedPath="6006_02;6006_03;6006_04;6006_05;6006_06"/>
+      <!-- <definition name="6007_01" RelatedPath="6007_02;6007_03;6007_04;6007_05;6007_06;6007_07"/> -->
+      <definition name="6008_01" RelatedPath="6008_02;6008_03;6008_04;6008_05;6008_06;6008_07"/>
+      <definition name="6009_01" RelatedPath="6009_02;6009_03;6009_04;6009_05;6009_06;6009_07;6009_08"/>
+      <definition name="6010_01" RelatedPath="6010_02;6010_03;6010_04;6010_05;6010_06;6010_07;6010_08"/>
+      <definition name="6011_01" RelatedPath="6011_02;6011_03;6011_04;6011_05;6011_06;6011_07;6011_08;6011_09"/>
+      <definition name="6012_01" RelatedPath="6012_02;6012_03;6012_04;6012_05;6012_06;6012_07;6012_08"/>
+    </GroupPath2>
+  </NormalScene>
+  <SceneA>
+    <SmallFishPath>
+      <definition name="A1001"/>
+      <definition name="A1002"/>
+      <definition name="A1003"/>
+      <definition name="A1004"/>
+      <definition name="A1005"/> 
+    </SmallFishPath>
+    <MiddleFishPath>
+      <definition name="A2001"/>
+      <definition name="A2002"/>
+      <definition name="A2003"/>
+      <definition name="A2004"/>
+      <definition name="A2005"/>
+    </MiddleFishPath>
+    <LargeFishPath>
+      <definition name="A3001"/>
+      <definition name="A3002"/>
+      <definition name="A3003"/>
+      <definition name="A3004"/>
+    </LargeFishPath>
+    <RegularPath>
+      <definition name="A4001"/>
+      <definition name="A4002"/>
+      <definition name="A4003"/>
+    </RegularPath>
+  </SceneA>
+  <SceneB>
+    <SmallFishPath>
+      <definition name="B1001"/>
+      <definition name="B1003"/>
+      <definition name="B1004"/>
+      <definition name="B1005"/>
+      <definition name="B1006"/>
+    </SmallFishPath>
+    <MiddleFishPath>
+      <definition name="B2001"/>
+      <definition name="B2002"/>
+      <definition name="B2003"/>
+      <definition name="B2004"/>
+    </MiddleFishPath>
+    <LargeFishPath>
+      <definition name="B3001"/>
+      <definition name="B3002"/>
+      <definition name="B3003"/>
+      <definition name="B3004"/>
+    </LargeFishPath>
+    <RegularPath>
+      <definition name="B4001"/>
+      <definition name="B4002"/>
+      <definition name="B4003"/>
+    </RegularPath>
+  </SceneB>
+  <SceneC>
+    <SmallFishPath>
+      <definition name="C1001"/>
+      <definition name="C1002"/>
+      <definition name="C1003"/>
+      <definition name="C1004"/>
+      <definition name="C1006"/>
+      <definition name="C1007"/>
+      <definition name="C1008"/>
+      <definition name="C1009"/>
+      <definition name="C1010"/>
+    </SmallFishPath>
+    <MiddleFishPath>
+      <definition name="C2002"/>
+  

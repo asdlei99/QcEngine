@@ -1,0 +1,60 @@
+<Fish class="QcResFishDesc">
+  <definition name="SameKindFish">
+    <Attribute score="10" class="QcSameKindBombFish" Sound="SameKindBombSound"/>
+    <subObject>
+      <object name="BloomRing" />
+    </subObject>
+  </definition>
+  <definition name="ScopeBomb" class="QcResFishDesc">
+    <Attribute class="QcScopeBombFish" score="10" BombEffect="ScopeBomb" Sound="ScopeBombSound"/>
+    <border>
+      <definition type="circle" value="(-63,37,40)(10,40,46)(-29,7,46)"/>
+    </border>
+    <Parameter>
+      <Float ExpodeRadiu="800"/>
+    </Parameter>
+    <border>
+      <definition type="circle" value="(0,0,90)(0,50,90)"/>
+    </border>
+  </definition>
+  <definition name="DelayScopeBomb" class="QcResFishDesc">
+    <Attribute class="QcDelayBombFish" score="10" />
+    <border>
+      <definition type="circle" value="(-19,13,68)(48,14,56)(97,16,40)(-90,20,21)(148,28,17)(138,-12,15)"/>
+    </border>
+    <states>
+      <state name="Living" time="1.5" iscycle="1"/>
+      <state name="Dying" time="3.0" iscycle="0"/>
+    </states>
+    <Parameter>
+      <Float ExpodeRadiu="0" DelayTime="3.0"/>
+    </Parameter>
+  </definition>
+  <definition name="ChainLinkFish" >
+    <Attribute class="DcChainLinkFish"/>
+    <border>
+      <definition type="circle" value="(5,-5,110)" />
+    </border>
+  </definition>
+  <definition name="GambleFish" >
+    <Attribute class="DcGambleFish" score="10" Render="Hit"/>
+    <border>
+      <definition type="circle" value="(67,7,81)(125,-78,20)(-133,10,44)(-45,15,20)(92,89,24)"/>
+    </border>
+    <states>
+      <state name="Living" FPS="24" iscycle="1"/>
+      <state name="001" FPS="24" />
+      <state name="003" FPS="24" iscycle="0"/>
+      <state name="004" FPS="24" iscycle="0"/>
+      <state name="005" FPS="24" iscycle="0"/>
+      <state name="006" FPS="24" iscycle="0"/>
+    </states>
+  </definition>
+  <definition name="RemoteBomberFish" class="QcResFishDesc">
+    <Attribute class="QcRemoteBomberFish" score="10" BombEffect="ScopeBomb" Sound="ScopeBombSound"/>
+    <states>
+      <state name="Living" FPS="24" iscycle="1"/>
+    </states>
+  </definition>
+  
+</Fish>

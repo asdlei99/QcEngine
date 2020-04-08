@@ -1,0 +1,6 @@
+<Config>
+  <SceneWidth>1920</SceneWidth>
+  <SceneHeight>1080</SceneHeight>
+  <FullScreen>1</FullScreen>
+  <ImmediatelPresent>0</ImmediatelPresent>
+</Config>

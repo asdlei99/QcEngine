@@ -1,0 +1,54 @@
+eteffectA5"  NetEffB="NeteffectB5" Shock="1" SubFirePosList="(-28.8,18.63)(-21.8,0)(-28.8,-18.63)"/>
+    <subObject>
+      <object name="BulletFire" />
+      <object name="BulletFire" />
+      <object name="BulletFire" />
+    </subObject>
+  </Element>
+</Bullet><Config>
+  <SceneWidth>1920</SceneWidth>
+  <SceneHeight>1080</SceneHeight>
+  <FullScreen>1</FullScreen>
+  <ImmediatelPresent>0</ImmediatelPresent>
+</Config><Digital class="QcResDigitalDesc">
+  <definition name="BulletDigital"/>
+  <definition name="GunLevelDigital"/>
+  <definition name="ScoreFrameDigital"/>
+  <definition name="getscore"/>
+  <definition name="DigitalJumpScore" />
+  <definition name="TrackLockDigital" />
+  <definition name="DialogDigital">
+    <SymbolList minus="-" colon=":"/>
+  </definition>
+  <definition name="FishScore">
+    <SymbolList minus="-" colon=":"/>
+  </definition>
+  <definition name="DigitalMinYaFen">
+    <SymbolList minus="-" colon=":"/>
+  </definition>
+  <definition name="DigitalCoin">
+    <SymbolList minus="-" colon=":"/>
+  </definition>
+  <definition name="DigitalMaxYaFen">
+    <SymbolList minus="-" colon=":"/>
+  </definition>
+  <definition name="DigitalDaMa">
+    <SymbolList minus="-" colon=":"/>
+  </definition>
+  <definition name="DigitalJiTaiHao">
+    <SymbolList minus="-" colon=":"/>
+  </definition>
+  <definition name="DigitalTeZhengMa">
+    <SymbolList minus="-" colon=":"/>
+  </definition>
+  <definition name="DigitalSystem">
+    <SymbolList minus="-" colon=":"/>
+  </definition>
+  <definition name="DigitalCoinRatio">
+    <SymbolList minus="-" colon=":"/>
+  </definition>
+  <definition name="DigitalDayCount">
+    <SymbolList minus="-" colon=":"/>
+  </definition>
+  <definition name="DigitalBZTiaoMa">
+   

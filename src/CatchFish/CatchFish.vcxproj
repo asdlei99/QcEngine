@@ -1,0 +1,593 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="IOTestRelease|Win32">
+      <Configuration>IOTestRelease</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="TestRelease|Win32">
+      <Configuration>TestRelease</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{C9C8F2C5-E4FE-4232-82E9-DBA4C23D269E}</ProjectGuid>
+    <RootNamespace>CatchFish</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectName>QcEngine</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='IOTestRelease|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='TestRelease|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='IOTestRelease|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='TestRelease|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.40219.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)../Output/Bin/$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)../Output/Obj/$(Configuration)/$(ProjectName)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)../Output/Bin/$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)../Output/Obj/$(Configuration)/$(ProjectName)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='TestRelease|Win32'">$(SolutionDir)../Output/Bin/$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='TestRelease|Win32'">$(SolutionDir)../Output/Obj/$(Configuration)/$(ProjectName)\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='IOTestRelease|Win32'">$(SolutionDir)../Output/Bin/$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='IOTestRelease|Win32'">$(SolutionDir)../Output/Obj/$(Configuration)/$(ProjectName)\</IntDir>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='IOTestRelease|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='IOTestRelease|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='IOTestRelease|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='TestRelease|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='TestRelease|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='TestRelease|Win32'" />
+    <ExecutablePath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(DXSDK_DIR)Utilities\bin\x86;$(ExecutablePath)</ExecutablePath>
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(DXSDK_DIR)Include;$(IncludePath)</IncludePath>
+    <ExecutablePath Condition="'$(Configuration)|$(Platform)'=='IOTestRelease|Win32'">$(DXSDK_DIR)Utilities\bin\x86;$(ExecutablePath)</ExecutablePath>
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='IOTestRelease|Win32'">$(DXSDK_DIR)Include;$(IncludePath)</IncludePath>
+    <ExecutablePath Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(DXSDK_DIR)Utilities\bin\x86;$(ExecutablePath)</ExecutablePath>
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(DXSDK_DIR)Include;$(IncludePath)</IncludePath>
+    <ExecutablePath Condition="'$(Configuration)|$(Platform)'=='TestRelease|Win32'">$(DXSDK_DIR)Utilities\bin\x86;$(ExecutablePath)</ExecutablePath>
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='TestRelease|Win32'">$(DXSDK_DIR)Include;$(IncludePath)</IncludePath>
+    <LibraryPath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(DXSDK_DIR)Lib\x86;$(LibraryPath)</LibraryPath>
+    <LibraryPath Condition="'$(Configuration)|$(Platform)'=='IOTestRelease|Win32'">$(DXSDK_DIR)Lib\x86;$(LibraryPath)</LibraryPath>
+    <LibraryPath Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(DXSDK_DIR)Lib\x86;$(LibraryPath)</LibraryPath>
+    <LibraryPath Condition="'$(Configuration)|$(Platform)'=='TestRelease|Win32'">$(DXSDK_DIR)Lib\x86;$(LibraryPath)</LibraryPath>
+    <EmbedManifest Condition="'$(Configuration)|$(Platform)'=='IOTestRelease|Win32'">true</EmbedManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+      <AdditionalIncludeDirectories>$(SolutionDir)DXUT\Include;$(SolutionDir)..\Dependent\magic;$(SolutionDir)..\Dependent\fmod\include;$(SolutionDir)..\Dependent;.\Source;$(SolutionDir)Vld\Include;$(SolutionDir)ImageLoader\Include;$(SolutionDir)QcCore;.\PCH</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;CATCHFISH_EXPORT;QmTestVersion;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.hpp</PrecompiledHeaderFile>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>$(SolutionDir)output\Bin\$(Configuration);$(SolutionDir)..\Dependent\magic;$(SolutionDir)..\Dependent\fmod\lib;$(SolutionDir)..\Dependent\libtcmalloc\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <GenerateMapFile>false</GenerateMapFile>
+      <SubSystem>Windows</SubSystem>
+      <LinkTimeCodeGeneration>
+      </LinkTimeCodeGeneration>
+      <TargetMachine>MachineX86</TargetMachine>
+      <ForceSymbolReferences>__tcmalloc</ForceSymbolReferences>
+      <AdditionalDependencies>libtcmalloc_minimal.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy "$(SolutionDir)..\Dependent\fmod\bin\*.dll" "$(SolutionDir)..\Output\Bin\$(Configuration)" /y
+copy "$(SolutionDir)..\Dependent\libtcmalloc\$(Configuration)\*.dll" "$(SolutionDir)..\Output\Bin\$(Configuration)" /y
+copy "$(SolutionDir)..\Dependent\magic\*.dll" "$(SolutionDir)..\Output\Bin\$(Configuration)" /y</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>Full</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <AdditionalIncludeDirectories>$(SolutionDir)DXUT\Include;$(SolutionDir)..\Dependent\magic;$(SolutionDir)..\Dependent\fmod\include;$(SolutionDir)..\Dependent;.\Source;$(SolutionDir)Vld\Include;$(SolutionDir)ImageLoader\Include;$(SolutionDir)QcCore;.\PCH</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;CATCHFISH_EXPORT;QmTestVersion;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.hpp</PrecompiledHeaderFile>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>$(SolutionDir)output\Bin\$(Configuration);$(SolutionDir)..\Dependent\magic;$(SolutionDir)..\Dependent\fmod\lib;$(SolutionDir)..\Dependent\libtcmalloc\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <GenerateMapFile>false</GenerateMapFile>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <LinkTimeCodeGeneration>
+      </LinkTimeCodeGeneration>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy "$(SolutionDir)..\Dependent\fmod\bin\*.dll" "$(SolutionDir)..\Output\Bin\$(Configuration)" /y
+copy "$(SolutionDir)..\Dependent\libtcmalloc\$(Configuration)\*.dll" "$(SolutionDir)..\Output\Bin\$(Configuration)" /y
+copy "$(SolutionDir)..\Dependent\magic\*.dll" "$(SolutionDir)..\Output\Bin\$(Configuration)" /y</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='TestRelease|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+      <AdditionalIncludeDirectories>$(SolutionDir)DXUT\Include;$(SolutionDir)..\Dependent\magic;$(SolutionDir)..\Dependent\fmod\include;$(SolutionDir)..\Dependent;.\Source;$(SolutionDir)Vld\Include;$(SolutionDir)ImageLoader\Include;$(SolutionDir)QcCore;.\PCH</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;CATCHFISH_EXPORT;QmTestVersion;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.hpp</PrecompiledHeaderFile>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>$(SolutionDir)output\Bin\$(Configuration);$(SolutionDir)..\Dependent\magic;$(SolutionDir)..\Dependent\fmod\lib;$(SolutionDir)..\Dependent\libtcmalloc\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <LinkTimeCodeGeneration>
+      </LinkTimeCodeGeneration>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy "$(SolutionDir)..\Dependent\fmod\bin\*.dll" "$(SolutionDir)..\Output\Bin\$(Configuration)" /y
+copy "$(SolutionDir)..\Dependent\libtcmalloc\$(Configuration)\*.dll" "$(SolutionDir)..\Output\Bin\$(Configuration)" /y
+copy "$(SolutionDir)..\Dependent\magic\*.dll" "$(SolutionDir)..\Output\Bin\$(Configuration)" /y</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='IOTestRelease|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <AdditionalIncludeDirectories>$(SolutionDir)DXUT\Include;$(SolutionDir)..\Dependent\magic;$(SolutionDir)..\Dependent\fmod\include;$(SolutionDir)..\Dependent;.\Source;$(SolutionDir)Vld\Include;$(SolutionDir)ImageLoader\Include;$(SolutionDir)QcCore;.\PCH</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;CATCHFISH_EXPORT;QmTestVersion;QmIOUsbOn;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.hpp</PrecompiledHeaderFile>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>$(SolutionDir)output\Bin\$(Configuration);$(SolutionDir)..\Dependent\magic;$(SolutionDir)..\Dependent\fmod\lib;$(SolutionDir)..\Dependent\libtcmalloc\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <LinkTimeCodeGeneration>
+      </LinkTimeCodeGeneration>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy "$(SolutionDir)..\Dependent\fmod\bin\*.dll" "$(SolutionDir)..\Output\Bin\$(Configuration)" /y
+copy "$(SolutionDir)..\Dependent\libtcmalloc\$(Configuration)\*.dll" "$(SolutionDir)..\Output\Bin\$(Configuration)" /y
+copy "$(SolutionDir)..\Dependent\magic\*.dll" "$(SolutionDir)..\Output\Bin\$(Configuration)" /y</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DXUT\DXUT_2008.vcxproj">
+      <Project>{e0cf097b-f22d-465b-a884-d89e55bd7ecd}</Project>
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\ImageLoader\ImageLoader.vcxproj">
+      <Project>{a6c25765-4772-432b-bbf5-fe6d30097123}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\QcCore\QcCore.vcxproj">
+      <Project>{1ebdb7f1-2938-4be7-9902-8438eabea658}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Test\SamplePrj.vcxproj">
+      <Project>{dd4a1286-ba16-4fbc-bef7-bb0ab0ada5e6}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\VLD\VLD.vcxproj">
+      <Project>{14cf38de-a73e-4046-b535-b3822ae51ec9}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\CatchFish.hpp" />
+    <ClInclude Include="Source\Common\QcEncryptFileBuf.hpp" />
+    <ClInclude Include="Source\Common\QcEncryptXmlLoader.hpp" />
+    <ClInclude Include="Source\Common\QcEventHandle.hpp" />
+    <ClInclude Include="Source\Common\QcObjectEx.hpp" />
+    <ClInclude Include="Source\Common\QcList.hpp" />
+    <ClInclude Include="Source\Common\QcMediaFileFinder.hpp" />
+    <ClInclude Include="Source\Common\QcTimerHandle.hpp" />
+    <ClInclude Include="Source\Common\QcTimerMgr.hpp" />
+    <ClInclude Include="Source\Common\QcUtil.hpp" />
+    <ClInclude Include="Source\MP_Particle\3d.h" />
+    <ClInclude Include="Source\MP_Particle\magic.h" />
+    <ClInclude Include="Source\MP_Particle\mp.h" />
+    <ClInclude Include="Source\MP_Particle\mp_string.h" />
+    <ClInclude Include="Source\MP_Particle\mp_wrap.h" />
+    <ClInclude Include="Source\QcBaseType.hpp" />
+    <ClInclude Include="Source\QcDebugHelper.hpp" />
+    <ClInclude Include="Source\QcGlobalData.hpp" />
+    <ClInclude Include="Source\QcObjType.hpp" />
+    <ClInclude Include="Source\QcParaModifier.hpp" />
+    <ClInclude Include="Source\QcUtilFun.hpp" />
+    <ClInclude Include="Source\QmMacro.hpp" />
+    <ClInclude Include="Source\Animator\QcAmimatorCyclone.hpp" />
+    <ClInclude Include="Source\Animator\QcAnimatorCreator.hpp" />
+    <ClInclude Include="Source\Animator\QcAnimatorAlpha.hpp" />
+    <ClInclude Include="Source\Animator\QcAnimatorDither.hpp" />
+    <ClInclude Include="Source\Animator\QcAnimatorFlash.hpp" />
+    <ClInclude Include="Source\Animator\QcAnimatorMove.hpp" />
+    <ClInclude Include="Source\Animator\QcAnimatorMoveBoundBox.hpp" />
+    <ClInclude Include="Source\Animator\QcAnimatorMoveCircle.hpp" />
+    <ClInclude Include="Source\Animator\QcAnimatorMoveLine.hpp" />
+    <ClInclude Include="Source\Animator\QcAnimatorMovePath.hpp" />
+    <ClInclude Include="Source\Animator\QcAnimatorMoveTrack.hpp" />
+    <ClInclude Include="Source\Animator\QcAnimatorRotation.hpp" />
+    <ClInclude Include="Source\Animator\QcAnimatorScale.hpp" />
+    <ClInclude Include="Source\Animator\QcAnimatorSpeed.hpp" />
+    <ClInclude Include="Source\Animator\QcAnimatorStretch.hpp" />
+    <ClInclude Include="Source\Animator\QcAnimatorTexture.hpp" />
+    <ClInclude Include="Source\Animator\QcPathKeyPointHandler.hpp" />
+    <ClInclude Include="Source\Animator\QiAnimator.hpp" />
+    <ClInclude Include="Source\Animator\QiAnimatorDeque.hpp" />
+    <ClInclude Include="Source\Animator\FishAnimator\QcDefaultFishAnimator.hpp" />
+    <ClInclude Include="Source\Animator\FishAnimator\QcGravityFishAnimator.hpp" />
+    <ClInclude Include="Source\Animator\FishAnimator\QcNormalFishAnimateHandle.hpp" />
+    <ClInclude Include="Source\Animator\FishAnimator\QcShelterHandle.hpp" />
+    <ClInclude Include="Source\Scene\QcBackGround.hpp" />
+    <ClInclude Include="Source\Scene\QcBackGroundMgr.hpp" />
+    <ClInclude Include="Source\Scene\QcBullet.hpp" />
+    <ClInclude Include="Source\Scene\QcBulletMgr.hpp" />
+    <ClInclude Include="Source\Scene\QcDelayExplodeAnimation.hpp" />
+    <ClInclude Include="Source\Scene\QcDigitalNode.hpp" />
+    <ClInclude Include="Source\Scene\QcFnKeyHelper.hpp" />
+    <ClInclude Include="Source\Scene\QcGoldColumn.hpp" />
+    <ClInclude Include="Source\Scene\QcGoldColumnMgr.hpp" />
+    <ClInclude Include="Source\Scene\QcGun.hpp" />
+    <ClInclude Include="Source\Scene\QcGunMgr.hpp" />
+    <ClInclude Include="Source\Scene\QcJumpScoreFishAnimation.hpp" />
+    <ClInclude Include="Source\Scene\QcPlayer.hpp" />
+    <ClInclude Include="Source\Scene\QcPlayerMgr.hpp" />
+    <ClInclude Include="Source\Scene\QcPlayerScoreHelper.hpp" />
+    <ClInclude Include="Source\Scene\QcQuickAccountShowNode.hpp" />
+    <ClInclude Include="Source\Scene\QcScene.hpp" />
+    <ClInclude Include="Source\Scene\QcSceneAnimation.hpp" />
+    <ClInclude Include="Source\Scene\QcSceneAnimationDeque.hpp" />
+    <ClInclude Include="Source\Scene\QcSceneAnimationMgr.hpp" />
+    <ClInclude Include="Source\Scene\QcSceneDigital.hpp" />
+    <ClInclude Include="Source\Scene\QcSceneLineAnimation.hpp" />
+    <ClInclude Include="Source\Scene\QcSceneLogo.hpp" />
+    <ClInclude Include="Source\Scene\QcSceneMgr.hpp" />
+    <ClInclude Include="Source\Scene\QcSceneNode.hpp" />
+    <ClInclude Include="Source\Scene\QcSceneNodePointerList.hpp" />
+    <ClInclude Include="Source\Scene\QcSceneStartMgr.hpp" />
+    <ClInclude Include="Source\Scene\QcSceneTrackFishHelper.hpp" />
+    <ClInclude Include="Source\Scene\QcVolCtrl.hpp" />
+    <ClInclude Include="Source\Scene\QiSceneNodeMonitor.hpp" />
+    <ClInclude Include="Source\Scene\Fish\DcChainFish.hpp" />
+    <ClInclude Include="Source\Scene\Fish\DcGambleFish.hpp" />
+    <ClInclude Include="Source\Scene\Fish\DcJumpScoreFish.hpp" />
+    <ClInclude Include="Source\Scene\Fish\QcBombFish.hpp" />
+    <ClInclude Include="Source\Scene\Fish\QcCombineFish.hpp" />
+    <ClInclude Include="Source\Scene\Fish\QcDelayBombFish.hpp" />
+    <ClInclude Include="Source\Scene\Fish\QcFish.hpp" />
+    <ClInclude Include="Source\Scene\Fish\QcFishControlInfo.hpp" />
+    <ClInclude Include="Source\Scene\Fish\QcFishFilter.hpp" />
+    <ClInclude Include="Source\Scene\Fish\QcFishMgr.hpp" />
+    <ClInclude Include="Source\Scene\Fish\QcFrozenFish.hpp" />
+    <ClInclude Include="Source\Scene\Fish\QcGravityFish.hpp" />
+    <ClInclude Include="Source\Scene\Fish\QcRemoteBomberFish.hpp" />
+    <ClInclude Include="Source\Scene\Fish\QcSameKindBombFish.hpp" />
+    <ClInclude Include="Source\Scene\Fish\QcSameKindFishHelper.hpp" />
+    <ClInclude Include="Source\Scene\Fish\QcScopeBombFish.hpp" />
+    <ClInclude Include="Source\Collision\QcRegion.hpp" />
+    <ClInclude Include="Source\Collision\QcRegionCircle.hpp" />
+    <ClInclude Include="Source\Collision\QcRegionMulti.hpp" />
+    <ClInclude Include="Source\Collision\QcRegionMultiCircle.hpp" />
+    <ClInclude Include="Source\Collision\QcRegionPolygon.hpp" />
+    <ClInclude Include="Source\App\QcAppConfig.hpp" />
+    <ClInclude Include="Source\App\QcGameApp.hpp" />
+    <ClInclude Include="Source\App\QcInputMgr.hpp" />
+    <ClInclude Include="Source\RenderSystem\QcColor.hpp" />
+    <ClInclude Include="Source\RenderSystem\QcDeviceRender.hpp" />
+    <ClInclude Include="Source\RenderSystem\QcRenderStateHelper.hpp" />
+    <ClInclude Include="Source\RenderSystem\QcVideoMemoryHelper.hpp" />
+    <ClInclude Include="Source\RenderSystem\QiRenderState.hpp" />
+    <ClInclude Include="Source\RenderSystem\QsMaterial.hpp" />
+    <ClInclude Include="Source\FileStorageSystem\Crypt_RC4.h" />
+    <ClInclude Include="Source\FileStorageSystem\FileProc.h" />
+    <ClInclude Include="Source\FileStorageSystem\QcFileStorageBase.hpp" />
+    <ClInclude Include="Source\FileStorageSystem\QcFileStorageMgr.hpp" />
+    <ClInclude Include="Source\FileStorageSystem\QcFishAlgorithm.hpp" />
+    <ClInclude Include="Source\FileStorageSystem\QcPlayerInfo.hpp" />
+    <ClInclude Include="Source\FileStorageSystem\QcPlayerInforList.hpp" />
+    <ClInclude Include="Source\FileStorageSystem\QcSystemSetting.hpp" />
+    <ClInclude Include="Source\FileStorageSystem\QsSysStorageData.hpp" />
+    <ClInclude Include="Source\Setting\DaMa.h" />
+    <ClInclude Include="Source\Setting\QcAccountShowDlg.hpp" />
+    <ClInclude Include="Source\Setting\QcButtonWidget.hpp" />
+    <ClInclude Include="Source\Setting\QcDialog.hpp" />
+    <ClInclude Include="Source\Setting\QcDigitalListWidget.hpp" />
+    <ClInclude Include="Source\Setting\QcDigitalWidget.hpp" />
+    <ClInclude Include="Source\Setting\QcEnumWidget.hpp" />
+    <ClInclude Include="Source\Setting\QcResDialogDesc.hpp" />
+    <ClInclude Include="Source\Setting\QcResDialogItemDesc.hpp" />
+    <ClInclude Include="Source\Setting\QcResEnumDescParam.hpp" />
+    <ClInclude Include="Source\Setting\QcSetting.hpp" />
+    <ClInclude Include="Source\Setting\QcSettingExchanger.hpp" />
+    <ClInclude Include="Source\Setting\QcSettingMgr.hpp" />
+    <ClInclude Include="Source\Setting\QcWidget.hpp" />
+    <ClInclude Include="Source\Setting\QcWidgetCallBacker.hpp" />
+    <ClInclude Include="Source\Sound\QcSound.hpp" />
+    <ClInclude Include="Source\Sound\QcSoundMgr.hpp" />
+    <ClInclude Include="Source\EffectRender\DcWaterEffect.hpp" />
+    <ClInclude Include="Source\EffectRender\QcBloomEffect.hpp" />
+    <ClInclude Include="Source\EffectRender\QcEffect.hpp" />
+    <ClInclude Include="Source\EffectRender\QcEffectMgr.hpp" />
+    <ClInclude Include="Source\EffectRender\QcHighlightEffect.hpp" />
+    <ClInclude Include="Source\Regular\QcDefaultSceneRegularMaker.hpp" />
+    <ClInclude Include="Source\Regular\QcRegularMgr.hpp" />
+    <ClInclude Include="Source\Regular\QcResFishRegularDesc.hpp" />
+    <ClInclude Include="Source\Regular\QcResSceneRegularDesc.hpp" />
+    <ClInclude Include="Source\Regular\QcSceneCircleRegularMaker.hpp" />
+    <ClInclude Include="Source\Regular\QiSceneRegularMaker.hpp" />
+    <ClInclude Include="Source\Res\QcPathMgr.hpp" />
+    <ClInclude Include="Source\Res\QcResBackGound.hpp" />
+    <ClInclude Include="Source\Res\QcResBulletDesc.hpp" />
+    <ClInclude Include="Source\Res\QcResCombineFishDesc.hpp" />
+    <ClInclude Include="Source\Res\QcResDesc.hpp" />
+    <ClInclude Include="Source\Res\QcResDescParam.hpp" />
+    <ClInclude Include="Source\Res\QcResDigitalDesc.hpp" />
+    <ClInclude Include="Source\Res\QcResFishDesc.hpp" />
+    <ClInclude Include="Source\Res\QcResGunDesc.hpp" />
+    <ClInclude Include="Source\Res\QcResImageDesc.hpp" />
+    <ClInclude Include="Source\Res\QcResImageListDesc.hpp" />
+    <ClInclude Include="Source\Res\QcResLoader.hpp" />
+    <ClInclude Include="Source\Res\QcResManager.hpp" />
+    <ClInclude Include="Source\Res\QcResPackLoader.hpp" />
+    <ClInclude Include="Source\Res\QcResPathDesc.hpp" />
+    <ClInclude Include="Source\Res\QcResPlayerDesc.hpp" />
+    <ClInclude Include="Source\Res\QcTexture.hpp" />
+    <ClInclude Include="Source\Res\QiResCallBack.hpp" />
+    <ClInclude Include="Pch\Pch.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\Common\QcEncryptFileBuf.cpp" />
+    <ClCompile Include="Source\Common\QcEncryptXmlLoader.cpp" />
+    <ClCompile Include="Source\Common\QcEventHandle.cpp" />
+    <ClCompile Include="Source\Common\QcMediaFileFinder.cpp" />
+    <ClCompile Include="Source\Common\QcTimerHandle.cpp" />
+    <ClCompile Include="Source\Common\QcTimerMgr.cpp" />
+    <ClCompile Include="Source\Common\QcUtil.cpp" />
+    <ClCompile Include="Source\Main.cpp" />
+    <ClCompile Include="Source\MP_Particle\3d.cpp" />
+    <ClCompile Include="Source\MP_Particle\mp.cpp" />
+    <ClCompile Include="Source\MP_Particle\mp_string.cpp" />
+    <ClCompile Include="Source\MP_Particle\mp_wrap.cpp" />
+    <ClCompile Include="Source\QcDebugHelper.cpp" />
+    <ClCompile Include="Source\QcGlobalData.cpp" />
+    <ClCompile Include="Source\Animator\QcAmimatorCyclone.cpp" />
+    <ClCompile Include="Source\Animator\QcAnimatorCreator.cpp" />
+    <ClCompile Include="Source\Animator\QcAnimatorAlpha.cpp" />
+    <ClCompile Include="Source\Animator\QcAnimatorDither.cpp" />
+    <ClCompile Include="Source\Animator\QcAnimatorFlash.cpp" />
+    <ClCompile Include="Source\Animator\QcAnimatorMoveBoundBox.cpp" />
+    <ClCompile Include="Source\Animator\QcAnimatorMoveCircle.cpp" />
+    <ClCompile Include="Source\Animator\QcAnimatorMoveLine.cpp" />
+    <ClCompile Include="Source\Animator\QcAnimatorMovePath.cpp" />
+    <ClCompile Include="Source\Animator\QcAnimatorMoveTrack.cpp" />
+    <ClCompile Include="Source\Animator\QcAnimatorRotation.cpp" />
+    <ClCompile Include="Source\Animator\QcAnimatorScale.cpp" />
+    <ClCompile Include="Source\Animator\QcAnimatorStretch.cpp" />
+    <ClCompile Include="Source\Animator\QcAnimatorTexture.cpp" />
+    <ClCompile Include="Source\Animator\QcPathKeyPointHandler.cpp" />
+    <ClCompile Include="Source\Animator\QiAnimator.cpp" />
+    <ClCompile Include="Source\Animator\FishAnimator\QcDefaultFishAnimator.cpp" />
+    <ClCompile Include="Source\Animator\FishAnimator\QcGravityFishAnimator.cpp" />
+    <ClCompile Include="Source\Animator\FishAnimator\QcNormalFishAnimateHandle.cpp" />
+    <ClCompile Include="Source\Animator\FishAnimator\QcShelterHandle.cpp" />
+    <ClCompile Include="Source\Scene\QcBackGround.cpp" />
+    <ClCompile Include="Source\Scene\QcBackGroundMgr.cpp" />
+    <ClCompile Include="Source\Scene\QcBullet.cpp" />
+    <ClCompile Include="Source\Scene\QcBulletMgr.cpp" />
+    <ClCompile Include="Source\Scene\QcDelayExplodeAnimation.cpp" />
+    <ClCompile Include="Source\Scene\QcDigitalNode.cpp" />
+    <ClCompile Include="Source\Scene\QcFnKeyHelper.cpp" />
+    <ClCompile Include="Source\Scene\QcGoldColumn.cpp" />
+    <ClCompile Include="Source\Scene\QcGoldColumnMgr.cpp" />
+    <ClCompile Include="Source\Scene\QcGun.cpp" />
+    <ClCompile Include="Source\Scene\QcGunMgr.cpp" />
+    <ClCompile Include="Source\Scene\QcJumpScoreFishAnimation.cpp" />
+    <ClCompile Include="Source\Scene\QcPlayer.cpp" />
+    <ClCompile Include="Source\Scene\QcPlayerMgr.cpp" />
+    <ClCompile Include="Source\Scene\QcPlayerScoreHelper.cpp" />
+    <ClCompile Include="Source\Scene\QcQuickAccountShowNode.cpp" />
+    <ClCompile Include="Source\Scene\QcScene.cpp" />
+    <ClCompile Include="Source\Scene\QcSceneAnimation.cpp" />
+    <ClCompile Include="Source\Scene\QcSceneAnimationDeque.cpp" />
+    <ClCompile Include="Source\Scene\QcSceneAnimationMgr.cpp" />
+    <ClCompile Include="Source\Scene\QcSceneDigital.cpp" />
+    <ClCompile Include="Source\Scene\QcSceneLineAnimation.cpp" />
+    <ClCompile Include="Source\Scene\QcSceneLogo.cpp" />
+    <ClCompile Include="Source\Scene\QcSceneMgr.cpp" />
+    <ClCompile Include="Source\Scene\QcSceneNode.cpp" />
+    <ClCompile Include="Source\Scene\QcSceneStartMgr.cpp" />
+    <ClCompile Include="Source\Scene\QcSceneTrackFishHelper.cpp" />
+    <ClCompile Include="Source\Scene\QcVolCtrl.cpp" />
+    <ClCompile Include="Source\Scene\Fish\DcChainFish.cpp" />
+    <ClCompile Include="Source\Scene\Fish\DcGambleFish.cpp" />
+    <ClCompile Include="Source\Scene\Fish\DcJumpScoreFish.cpp" />
+    <ClCompile Include="Source\Scene\Fish\QcBombFish.cpp" />
+    <ClCompile Include="Source\Scene\Fish\QcCombineFish.cpp" />
+    <ClCompile Include="Source\Scene\Fish\QcDelayBombFish.cpp" />
+    <ClCompile Include="Source\Scene\Fish\QcFish.cpp" />
+    <ClCompile Include="Source\Scene\Fish\QcFishControlInfo.cpp" />
+    <ClCompile Include="Source\Scene\Fish\QcFishFilter.cpp" />
+    <ClCompile Include="Source\Scene\Fish\QcFishMgr.cpp" />
+    <ClCompile Include="Source\Scene\Fish\QcFrozenFish.cpp" />
+    <ClCompile Include="Source\Scene\Fish\QcGravityFish.cpp" />
+    <ClCompile Include="Source\Scene\Fish\QcRemoteBomberFish.cpp" />
+    <ClCompile Include="Source\Scene\Fish\QcSameKindBombFish.cpp" />
+    <ClCompile Include="Source\Scene\Fish\QcScopeBombFish.cpp" />
+    <ClCompile Include="Source\Collision\QcRegionCircle.cpp" />
+    <ClCompile Include="Source\Collision\QcRegionMulti.cpp" />
+    <ClCompile Include="Source\Collision\QcRegionMultiCircle.cpp" />
+    <ClCompile Include="Source\Collision\QcRegionPolygon.cpp" />
+    <ClCompile Include="Source\App\QcAppConfig.cpp" />
+    <ClCompile Include="Source\App\QcGameApp.cpp" />
+    <ClCompile Include="Source\App\QcInputMgr.cpp" />
+    <ClCompile Include="Source\RenderSystem\QcDeviceRender.cpp" />
+    <ClCompile Include="Source\RenderSystem\QcVideoMemoryHelper.cpp" />
+    <ClCompile Include="Source\FileStorageSystem\Crypt_RC4.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='IOTestRelease|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='TestRelease|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\FileStorageSystem\FileProc.cpp" />
+    <ClCompile Include="Source\FileStorageSystem\QcFileStorageMgr.cpp" />
+    <ClCompile Include="Source\FileStorageSystem\QcFishAlgorithm.cpp" />
+    <ClCompile Include="Source\FileStorageSystem\QcPlayerInfo.cpp" />
+    <ClCompile Include="Source\FileStorageSystem\QcPlayerInforList.cpp" />
+    <ClCompile Include="Source\FileStorageSystem\QcSystemSetting.cpp" />
+    <ClCompile Include="Source\Setting\DaMa.cpp" />
+    <ClCompile Include="Source\Setting\QcAccountShowDlg.cpp" />
+    <ClCompile Include="Source\Setting\QcButtonWidget.cpp" />
+    <ClCompile Include="Source\Setting\QcDialog.cpp" />
+    <ClCompile Include="Source\Setting\QcDigitalListWidget.cpp" />
+    <ClCompile Include="Source\Setting\QcDigitalWidget.cpp" />
+    <ClCompile Include="Source\Setting\QcEnumWidget.cpp" />
+    <ClCompile Include="Source\Setting\QcResDialogDesc.cpp" />
+    <ClCompile Include="Source\Setting\QcResDialogItemDesc.cpp" />
+    <ClCompile Include="Source\Setting\QcResEnumDescParam.cpp" />
+    <ClCompile Include="Source\Setting\QcSettingExchanger.cpp" />
+    <ClCompile Include="Source\Setting\QcSettingMgr.cpp" />
+    <ClCompile Include="Source\Setting\QcWidget.cpp" />
+    <ClCompile Include="Source\Sound\QcSound.cpp" />
+    <ClCompile Include="Source\Sound\QcSoundMgr.cpp" />
+    <ClCompile Include="Source\EffectRender\DcWaterEffect.cpp" />
+    <ClCompile Include="Source\EffectRender\QcBloomEffect.cpp" />
+    <ClCompile Include="Source\EffectRender\QcEffect.cpp" />
+    <ClCompile Include="Source\EffectRender\QcEffectMgr.cpp" />
+    <ClCompile Include="Source\EffectRender\QcHighlightEffect.cpp" />
+    <ClCompile Include="Source\Regular\QcDefaultSceneRegularMaker.cpp" />
+    <ClCompile Include="Source\Regular\QcRegularMgr.cpp" />
+    <ClCompile Include="Source\Regular\QcResFishRegularDesc.cpp" />
+    <ClCompile Include="Source\Regular\QcResSceneRegularDesc.cpp" />
+    <ClCompile Include="Source\Regular\QcSceneCircleRegularMaker.cpp" />
+    <ClCompile Include="Source\Res\QcPathMgr.cpp" />
+    <ClCompile Include="Source\Res\QcResBackGound.cpp" />
+    <ClCompile Include="Source\Res\QcResBulletDesc.cpp" />
+    <ClCompile Include="Source\Res\QcResCombineFishDesc.cpp" />
+    <ClCompile Include="Source\Res\QcResDesc.cpp" />
+    <ClCompile Include="Source\Res\QcResDescParam.cpp" />
+    <ClCompile Include="Source\Res\QcResDigitalDesc.cpp" />
+    <ClCompile Include="Source\Res\QcResFishDesc.cpp" />
+    <ClCompile Include="Source\Res\QcResGunDesc.cpp" />
+    <ClCompile Include="Source\Res\QcResImageDesc.cpp" />
+    <ClCompile Include="Source\Res\QcResImageListDesc.cpp" />
+    <ClCompile Include="Source\Res\QcResLoader.cpp" />
+    <ClCompile Include="Source\Res\QcResManager.cpp" />
+    <ClCompile Include="Source\Res\QcResPackLoader.cpp" />
+    <ClCompile Include="Source\Res\QcResPathDesc.cpp" />
+    <ClCompile Include="Source\Res\QcResPlayerDesc.cpp" />
+    <ClCompile Include="Source\Res\QcTexture.cpp" />
+    <ClCompile Include="Pch\Pch.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='IOTestRelease|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='TestRelease|Win32'">Disabled</Optimization>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='TestRelease|Win32'">Create</PrecompiledHeader>
+      <DebugInformationFormat Condition="'$(Configuration)|$(Platform)'=='TestRelease|Win32'">ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Media\Xml\ResBackGound.xml" />
+    <None Include="..\Media\Xml\ResBullet.xml" />
+    <None Include="..\Media\Xml\ResConfig.xml">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="..\Media\Xml\ResDigital.xml" />
+    <None Include="..\Media\Xml\ResEffect.xml" />
+    <None Include="..\Media\Xml\ResFish.xml">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="..\Media\Xml\ResFishConfig.xml" />
+    <None Include="..\Media\Xml\ResFishRegular.xml" />
+    <None Include="..\Media\Xml\ResGun.xml" />
+    <None Include="..\Media\Xml\ResImage.xml" />
+    <None Include="..\Media\Xml\ResPath.xml" />
+    <None Include="..\Media\Xml\ResPathUionScreen.xml" />
+    <None Include="..\Media\Xml\ResPlayer.xml" />
+    <None Include="..\Media\Xml\ResProgressbar.xml" />
+    <None Include="..\Media\Xml\ResSetting.xml" />
+    <None Include="..\Media\Xml\ResSound.xml" />
+    <None Include="..\Media\Xml\ResSpecialFish.xml" />
+    <None Include="..\Media\Xml\ResSysValue.xml" />
+    <None Include="..\Media\shader\Bloom.fx" />
+    <None Include="..\Media\shader\ColorWiper.fx" />
+    <None Include="..\Media\shader\Default.fx" />
+    <None Include="..\Media\shader\Hit.fx" />
+    <None Include="..\Media\shader\Water.fx" />
+    <None Include="..\Media\shader\Wave.fx" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,8 @@
+<OffsetPointMap>
+    <Element File="AccountMenuCaption_000_000.png" Offset="-50,10"/>
+    <Element File="AccountMenu_000_000.png" Offset="-40,10" />
+    <Element File="AccountMenu_001_000.png" Offset="-30,10"/>
+    <Element File="AccountMenuDelayTip_000_000.png" Offset="-20,10"/>
+    <Element File="AccountMenuDelay_000_000.png" Offset="-10,10"/>
+  <Element File="AccountMenuDelay_000_001.png"/>
+</OffsetPointMap>

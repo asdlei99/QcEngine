@@ -1,0 +1,116 @@
+nition>
+  <definition name="Volumn">
+    <SymbolList minus="-" colon=":"/>
+  </definition>
+</Digital><Effect>
+  <definition name="Hit" class="QcHighlightEffect"/>
+  <definition name="Bloom" class="QcBloomEffect"/>
+  <definition name="Water" class="DcWaterEffect"/>
+  <definition name="Wave" class="QcEffect"/>
+  <definition name="Default" class="QcEffect"/>
+  <definition name="ColorWiper" class="QcEffect"/>
+</Effect><Fish class="QcResFishDesc">
+  <definition name="fish11">
+    <Attribute score="12" Animator="QcGravityFishAnimator"/>
+    <border>
+      <definition type="circle" value="(52,27,37)(46,-22,40)(6,-2,27)"/>
+    </border>
+    <states>
+      <state name="Living" time="1.5f" iscycle="0"/>
+    </states>
+  </definition>
+
+  <definition name="fish12">
+    <Attribute score="15"/>
+    <border>
+      <definition type="circle" value="(99,8,38)(30,17,35)(-1,-32,44)(7,-64,34)(-52,-11,26)(-74,23,16)(-40,-42,18)"/>
+    </border>
+  </definition>
+
+  <definition name="fish13">
+    <border>
+      <definition type="circle" value="(25,-4,67)(-56,-10,25)(-83,-16,17))"/>
+    </border>
+    <Attribute score="18"/>
+  </definition>
+
+  <definition name="fish14">
+    <Attribute score="20"/>
+    <border>
+      <definition type="circle" value="(-20,-2,69)(-98,12,21)"/>
+    </border>
+  </definition>
+
+  <definition name="fish15">
+    <Attribute score="25"/>
+    <border>
+      <definition type="circle" value="(115,0,51)(99,31,48)(61,60,39)(46,-6,60)(106,-45,34)(45,-71,41)(-14,9,44)(66,106,20)(-32,-24,21)(-44,39,17)"/>
+    </border>
+  </definition>
+
+  <definition name="fish16">
+    <Attribute score="30" Render="Hit" Sound="LargeFishSound"/>
+    <border>
+      <definition type="circle" value="(152,12,52)(75,14,47)(10,9,37)(-43,3,30)(-90,6,32)(-152,8,45)(207,11,31)(97,48,27)(-204,9,30)"/>
+    </border>
+  </definition>
+
+  <definition name="fish17">
+    <Attribute score="40" Render="Hit" Sound="LargeFishSound"/>
+    <border>
+      <definition type="circle" value="(138,4,55)(86,67,28)(52,1,58)(91,-57,25)(-21,-5,39)(-76,-19,26)(-108,-34,19)(-134,-50,20)(190,20,19)(-160,-60,16)(-133,-71,21)"/>
+    </border>
+  </definition>
+  <definition name="fish01">
+    <Attribute score="2"/>
+    <border>
+      <definition type="circle" value="(3,-1,30)"/>
+    </border>
+  </definition>
+  
+  <definition name="fish02">
+    <Attribute score="2"/>
+    <border>
+      <definition type="circle" value="(-3,0,31)"/>
+    </border>
+  </definition>
+  
+  <definition name="fish03">
+    <Attribute score="3"/>
+    <border>
+      <definition type="circle" value="(34,1,33)(-17,1,21)(-38,3,25)"/>
+    </border>
+  </definition>
+  
+  <definition name="fish04">
+    <Attribute score="4"/>
+    <border>
+      <definition type="circle" value="(22,-2,40)(-38,19,23)(-22,-9,22)(-43,-2,19)"/>
+    </border>
+  </definition>
+  
+  <definition name="fish05">
+    <Attribute score="5"/>
+    <border>
+      <definition type="circle" value="(39,0,42)(-5,5,21)(-36,4,17)(-63,3,17)"/>
+    </border>
+  </definition>
+  
+  <definition name="fish06">
+    <Attribute score="6"/>
+    <border>
+      <definition type="circle" value="(56,5,25)(28,13,26)(23,-13,25)(-33,14,38)(-21,-19,27)(-53,-12,28)(-63,27,18))"/>
+    </border>
+  </definition>
+  
+  <definition name="fish07">
+    <Attribute score="7"/>
+    <border>
+      <definition type="circle" value="(31,52,32)(37,-2,27)(32,-53,34)(2,-1,15)(-29,1,17)"/>
+    </border>
+  </definition>
+  
+  <definition name="fish08">
+    <Attribute score="8"/>
+    <border>
+      <definition type="circle" value="(69,2,32)(23,2,25)(-17,-5,22)(-

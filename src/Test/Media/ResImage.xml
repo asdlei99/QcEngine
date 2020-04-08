@@ -1,0 +1,230 @@
+<Image class="QcResImageDesc">
+  <definition name="Stencil"/>
+  <definition name="SceneLogo">
+    <Attribute class="QcSceneLogo"/>
+    <subObject>
+      <object name="Logo">
+        <Attribute position="0,0"/>
+      </object>
+    </subObject>
+  </definition>
+  <definition name="GoldColumn">
+    <Attribute class="QcGoldColumn" Prefix="SingleChip"/>
+  </definition>
+  <definition name="ChipAnimation" >
+    <states>
+      <state name="Living" FPS="48" />
+    </states>
+  </definition>
+  <definition name="SilveryCoin">
+    <Attribute Prefix="SilverChip" />
+  </definition>
+  <definition name="GoldCoin">
+    <Attribute Prefix="GoldChip" />
+  </definition>
+
+  <definition name="Net"/>
+  <definition name="ExitCoin"/>
+  <definition name="ExitCoinError"/>
+  <definition name="ExitLottery"/>
+  <definition name="ExitLotteryError"/>
+  <definition name="ErrorBg"/>
+  <definition name="ConnectError"/>
+  <definition name="CardError"/>
+  <definition name="DaMaError"/>
+  <definition name="SetttingReady"/>
+  <definition name="xuanfengyuscore"/>
+  <definition name="DecodeSettingCoinTip"/>
+  <definition name="DecodeSettingChangDiTip"/>
+  <definition name="DecodeSettingDayCountTip"/>
+  <definition name="DecodeSettingSysTimeTip"/>
+  <definition name="DecodeSettingShowTip"/>
+  <definition name="BulletFire"/>
+  <definition name="Wave">
+    <Attribute render="Wave"/>
+    <states>
+      <state name="Living" time="4.0" iscycle="1"/>
+    </states>
+  </definition>
+  <definition name="shuiwen">
+    <Attribute render="Wave"/>
+    <states>
+      <state name="Living" time="4.0" iscycle="1"/>
+    </states>
+  </definition>
+  <definition name="BaoJi">
+    <states>
+      <state name="Living" time="2.0" iscycle="1"/>
+    </states>
+  </definition>
+  <definition name="SuperGunFlag">
+    <states>
+      <state name="Living" time="1.0" iscycle="1"/>
+      <state name="Dying" time="1.8" iscycle="1"/>
+    </states>
+  </definition>
+  <definition name="BonusBomber">
+    <states>
+      <state name="Living" time="1.0" iscycle="1"/>
+      <state name="Dying" time="1.8" iscycle="1"/>
+    </states>
+  </definition>
+  <definition name="suodingkuang">
+    <states>
+    <state name="Living" time="1.0" iscycle="1"/>
+  </states>
+  </definition>
+  <definition name="CaiJinQuan">
+    <states>
+      <state name="Living" time="1" iscycle="0"/>
+      <state name="Dying" time="1.5" iscycle="1"/>
+    </states>
+  </definition>
+  <definition name="xuanfeng"/>
+
+  <definition name="QuickAccountWin"/>
+  <definition name="QuickDeepSlip"/>
+  <definition name="TotalProfit"/>
+  <definition name="CurrentProfit"/>
+  <definition name="InScore"/>
+  <definition name="ExitScore"/>
+  <definition name="InCoin"/>
+  <definition name="OutCoin"/>
+  <definition name="Lottery"/>
+  <definition name="LeaveTime"/>
+  <definition name="VolumnBlock"/>
+  <definition name="QuickAccountBg">
+    <Attribute class="QcQuickAccountShowNode"/>
+    <Parameter>
+      <Image CoinUnit="QuickAccountCoinUnit" TimeUnit="QuickAccountTimeUnit"/>
+      <String DigitalRes="DialogDigital"/>
+    </Parameter>
+  </definition>
+  <definition name="VolumnBG" >
+    <Attribute class="QcVolCtrl"/>
+    <subObject>
+      <object name="VolumnLogo">
+        <Attribute position="-300,0"/>
+      </object>
+    </subObject>
+  </definition>
+  <definition name="ChainFishId">
+    <states>
+      <state name="Living" FPS="24" />
+    </states>
+  </definition>
+  <definition name="JumpingScore" >
+    <Attribute class="QcSceneDigital" />
+    <Parameter>
+      <String DigitalRes="DigitalJumpScore"/>
+    </Parameter>
+  </definition>
+  <definition name="ChainShell" >
+    <states>
+      <state name="000" />
+      <state name="001" iscycle="1" />
+    </states>
+  </definition>
+  <definition name="ChainEff" >
+    <states>
+      <state name="Living" time="1" iscycle="0" />
+    </states>
+  </definition>
+  <definition name="ChainRope" />
+  <definition name="ChainLogo" />
+  <definition name="ChainLinkScoreTips" >
+    <Attribute  position="0,150"/>
+    <subObject>
+      <object name="ChainLinkScoreHead" />
+      <object name="ChainLinkScoreTail" />
+      <object name="ChainLinkScore" >      
+        <Attribute class="QcSceneDigital" position="25,0"/>
+        <Parameter>
+          <String DigitalRes="ChainLinkDigital" DigitalAlign="Center" />
+        </Parameter>
+      </object>
+    </subObject>
+  </definition>
+  <definition name="ChainFishScale" >
+    <Attribute class="QcSceneDigital" />
+    <Parameter>
+      <String DigitalRes="ChainDigital" DigitalAlign="Center" />
+    </Parameter>
+  </definition>
+  <definition name="BomberBtn">
+    <states>
+      <state name="000" FPS="24" />
+      <state name="001" FPS="24" iscycle="0" />
+    </states>
+  </definition>
+  <definition name="BomberBtnArrow" />
+  <definition name="BomberRoper" >
+    <states>
+      <state name="000" FPS="24" />
+      <state name="001" time="2" iscycle="0" />
+    </states>
+  </definition>
+  <definition name="BomberBtnEff">
+    <states>
+      <state name="000" FPS="24" iscycle="0" />
+    </states>
+  </definition>
+  <definition name="BomberTips" >
+    <states>
+      <state name="000" FPS="12" />
+      <state name="001" FPS="12" iscycle="1" />
+    </states>
+  </definition>
+  <definition name="PlayerBomber">
+    <states>
+      <state name="Living" time="1" iscycle="1"/>
+      <state name="Dying" time="1.5" iscycle="0"/>
+    </states>
+    <Parameter>
+      <String Sound="ScopeBombSound" />
+      <Float ExpodeRadiu="400" />
+    </Parameter>
+  </definition>
+  <definition name="zhadannum">
+    <states>
+      <state name="Living" time="10" iscycle="0"/>
+    </states>
+  </definition>
+  <definition name="GambleFishScoreBg" />
+  <definition name="GambleFishScaleTips" />
+  <definition name="GambleFishResult" />
+  <definition name="GambleFishWins" />
+  <definition name="GambleFishDice" >
+    <states>
+      <state name="Living" FPS="24" iscycle="0"/>
+      <state name="001" FPS="24" iscycle="0"/>
+      <state name="002" FPS="24" iscycle="0"/>
+      <state name="003" FPS="24" iscycle="0"/>
+      <state name="004" FPS="24" iscycle="0"/>
+      <state name="005" FPS="24" iscycle="0"/>
+      <state name="006" FPS="24" iscycle="0"/>
+    </states>    
+  </definition>
+  <definition name="SelectAbandon" >
+    <subObject>
+      <object name="AbandonSelected" />
+    </subObject>
+  </definition>
+  <definition name="SelectLess">
+    <subObject>
+      <object name="LessSelected"/>
+    </subObject>
+  </definition>
+  <definition name="SelectGreat">
+    <subObject>
+      <object name="GreatSelected"/>
+    </subObject>
+  </definition>
+  <definition name="GambleCounter">
+    <states>
+      <state name="Living" time="10" iscycle="0"/>
+    </states>
+  </definition>
+  <definition name="GambleOver" />
+  <definition name="LogoForAuto"/>
+</Image>

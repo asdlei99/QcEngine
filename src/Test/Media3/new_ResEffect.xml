@@ -1,0 +1,8 @@
+<Effect>
+  <definition name="Hit" class="QcHighlightEffect"/>
+  <definition name="Bloom" class="QcBloomEffect"/>
+  <definition name="Water" class="DcWaterEffect"/>
+  <definition name="Wave" class="QcEffect"/>
+  <definition name="Default" class="QcEffect"/>
+  <definition name="ColorWiper" class="QcEffect"/>
+</Effect>

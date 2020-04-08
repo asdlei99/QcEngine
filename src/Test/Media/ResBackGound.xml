@@ -1,0 +1,128 @@
+<Image class="QcResBackGound">
+  <definition name="SceneA">
+    <Attribute BgMusic="bg_01" Wave="Wave" WaveAlphaValue="0.65"/>
+    <SceneNode name="SceneA_Hole" pos="42,107" Bound="(175,419)(335,383)(464,246)(455,52)(265,-246)(-13,-335)(-256,-285)(-388,-202)(-479,6)(-379,178)(-9,397)"/>
+    <UpsideObj name="SceneA_SubObjA" />
+    <UpsideObj name="SceneA_SubObjB" />
+    <DownsideObj name="SceneA_SubObjC" />
+    <DownsideObj name="SceneA_SubObjD" />
+    <UpsideObj name="SceneA_SubObjE" />
+  </definition>
+  <definition name="SceneB">
+    <Attribute BgMusic="bg_02" Wave="Wave" WaveAlphaValue="0.9"/>
+    <SceneNode name="SceneB_Hole" pos="-29,-38" Bound="(-28,-312)(-162,-159)(-359,-35)(-426,160)(-303,322)(-51,410)(248,319)(425,106)(340,-216)(207,-330)"/>
+    <UpsideObj name="SceneB_SubObjA" />
+    <DownsideObj name="SceneB_SubObjB" />
+    <DownsideObj name="SceneB_SubObjC" />
+    <DownsideObj name="SceneB_SubObjD" />
+    <DownsideObj name="SceneB_SubObjE" />
+    <DownsideObj name="SceneB_SubObjF" />
+  </definition>
+  <definition name="SceneC">
+    <Attribute BgMusic="bg_03" Wave="Wave" WaveAlphaValue="0.8"/>
+    <SceneNode name="SceneC_Hole" pos="408,167" Bound="(-269,534)(-301,380)(-234,186)(-173,38)(-183,-90)(-163,-248)(8,-348)(247,-307)(573,-76)(608,53)(589,207)(626,280)(960,442)(960,540)"/>
+    <DownsideObj name="SceneC_SubObjA" />
+    <DownsideObj name="SceneC_SubObjB" />
+    <DownsideObj name="SceneC_SubObjC" />
+    <DownsideObj name="SceneC_SubObjD" />
+    <DownsideObj name="SceneC_SubObjE" />
+  </definition>
+
+  <definition name="SceneA_SubObjA" class="QcResImageDesc">
+    <Attribute position="61,-331"/>
+    <states>
+      <state name="Living" FPS="24" />
+    </states>
+  </definition>
+  <definition name="SceneA_SubObjB" class="QcResImageDesc">
+    <Attribute position="52,-127"/>
+    <states>
+      <state name="Living" FPS="24" />
+    </states>
+  </definition>
+  <definition name="SceneA_SubObjC" class="QcResImageDesc">
+    <Attribute position="736,153"/>
+    <states>
+      <state name="Living" FPS="24" />
+    </states>
+  </definition>
+  <definition name="SceneA_SubObjD" class="QcResImageDesc">
+    <Attribute position="-580,-71"/>
+    <states>
+      <state name="Living" FPS="24" />
+    </states>
+  </definition>
+  <definition name="SceneA_SubObjE" class="QcResImageDesc">
+    <Attribute position="183,217"/>
+    <states>
+      <state name="Living" FPS="24" />
+    </states>
+  </definition>
+  <definition name="SceneB_SubObjA" class="QcResImageDesc">
+    <Attribute position="96,-393"/>
+    <states>
+      <state name="Living" FPS="24" />
+    </states>
+  </definition>
+  <definition name="SceneB_SubObjB" class="QcResImageDesc">
+    <Attribute position="820,-428"/>
+    <states>
+      <state name="Living" FPS="24" />
+    </states>
+  </definition>
+  <definition name="SceneB_SubObjC" class="QcResImageDesc">
+    <Attribute position="-796,-313"/>
+    <states>
+      <state name="Living" FPS="24" />
+    </states>
+  </definition>
+  <definition name="SceneB_SubObjD" class="QcResImageDesc">
+    <Attribute position="460,303"/>
+    <states>
+      <state name="Living" FPS="24" />
+    </states>
+  </definition>
+  <definition name="SceneB_SubObjE" class="QcResImageDesc">
+    <Attribute position="236,523"/>
+    <states>
+      <state name="Living" FPS="24" />
+    </states>
+  </definition>
+  <definition name="SceneB_SubObjF" class="QcResImageDesc">
+    <Attribute position="-580,231"/>
+    <states>
+      <state name="Living" FPS="24" />
+    </states>
+  </definition>
+  <definition name="SceneC_SubObjA" class="QcResImageDesc">
+    <Attribute position="-549,132"/>
+    <states>
+      <state name="Living" FPS="24" />
+    </states>
+  </definition>
+  <definition name="SceneC_SubObjB" class="QcResImageDesc">
+    <Attribute position="-448,-73"/>
+    <states>
+      <state name="Living" FPS="24" />
+    </states>
+  </definition>
+  <definition name="SceneC_SubObjC" class="QcResImageDesc">
+    <Attribute position="670,-256"/>
+    <states>
+      <state name="Living" FPS="24" />
+    </states>
+  </definition>
+  <definition name="SceneC_SubObjD" class="QcResImageDesc">
+    <Attribute position="-762,-415"/>
+    <states>
+      <state name="Living" FPS="24" />
+    </states>
+  </definition>
+  <definition name="SceneC_SubObjE" class="QcResImageDesc">
+    <Attribute position="-420,-404"/>
+    <states>
+      <state name="Living" FPS="24" />
+    </states>
+  </definition>
+  
+</Image>

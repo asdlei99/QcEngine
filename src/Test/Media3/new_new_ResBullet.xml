@@ -1,0 +1,80 @@
+FPS="24" />
+    </states>
+  </definition>
+  <definition name="SceneC_SubObjD" class="QcResImageDesc">
+    <Attribute position="-762,-415"/>
+    <states>
+      <state name="Living" FPS="24" />
+    </states>
+  </definition>
+  <definition name="SceneC_SubObjE" class="QcResImageDesc">
+    <Attribute position="-420,-404"/>
+    <states>
+      <state name="Living" FPS="24" />
+    </states>
+  </definition>
+  
+</Image><Bullet class="QcResBulletDesc">
+  <definition name="NeteffectA1" class="QcResImageDesc">
+    <states>
+      <state name="Living" time="0.63" iscycle="0"/>
+    </states>
+  </definition>
+  <definition name="NeteffectA3" class="QcResImageDesc">
+    <states>
+      <state name="Living" time="0.7" iscycle="0"/>
+    </states>
+  </definition>
+  <definition name="NeteffectA5" class="QcResImageDesc">
+    <states>
+      <state name="Living" time="0.7" iscycle="0"/>
+    </states>
+  </definition>
+  <definition name="NeteffectB1" class="QcResImageDesc">
+    <states>
+      <state name="Living" time="0.7" iscycle="0"/>
+    </states>
+  </definition>
+  <definition name="NeteffectB3" class="QcResImageDesc">
+    <states>
+      <state name="Living" time="0.7" iscycle="0"/>
+    </states>
+  </definition>
+  <definition name="NeteffectB5" class="QcResImageDesc">
+    <states>
+      <state name="Living" time="0.7" iscycle="0"/>
+    </states>
+  </definition>
+  <definition name="LzpQuan" class="QcResImageDesc"/>
+  <Element name="Bullet1" listClass="QcResImageListDesc" class="QcResBulletDesc" Begin="1" End="1">
+    <Net   NetEffA="NeteffectA1" NetEffB="NeteffectB1" Shock="0" SubFirePosList="(-19.5,0)"/>
+    <subObject>
+      <object name="BulletFire" />
+    </subObject>
+  </Element>
+  <Element name="Bullet2" listClass="QcResImageListDesc" class="QcResBulletDesc" Begin="1" End="1">
+    <Net   NetEffA="NeteffectA3" NetEffB="NeteffectB3" Shock="0" SubFirePosList="(-19.5,7.5)(-19.5,-7.5)"/>
+    <subObject>
+      <object name="BulletFire" />
+      <object name="BulletFire" />
+    </subObject>
+  </Element>
+  <Element name="Bullet3" listClass="QcResImageListDesc" class="QcResBulletDesc" Begin="1" End="1">
+    <Net   NetEffA="NeteffectA3"  NetEffB="NeteffectB5" Shock="1" SubFirePosList="(-29.2,13.6)(-22.4,1)(-29.2,-13.6)"/>
+    <subObject>
+      <object name="BulletFire" />
+      <object name="BulletFire" />
+      <object name="BulletFire" />
+    </subObject>
+  </Element>
+  <Element name="Bullet6" listClass="QcResImageListDesc" class="QcResBulletDesc" Begin="1" End="1">
+    <Net   NetEffA="NeteffectA1" NetEffB="NeteffectB1" Shock="0" SubFirePosList="(-28.8,0)"/>
+    <subObject>
+      <object name="BulletFire" />
+    </subObject>
+  </Element>
+  <Element name="Bullet7" listClass="QcResImageListDesc" class="QcResBulletDesc" Begin="1" End="1">
+    <Net   NetEffA="NeteffectA3" NetEffB="NeteffectB3" Shock="0" SubFirePosList="(-28.8,10.0)(-28.8,-10.0)"/>
+    <subObject>
+      <object name="BulletFire" />
+      <object name="BulletFir

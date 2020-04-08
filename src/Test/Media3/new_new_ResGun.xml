@@ -1,0 +1,34 @@
+ivingTime="20.0" count="0" gapWidth="40.0" />
+      <Item regular="Regular33" path="4064"  startTime="27.0.0" livingTime="20.0" count="0" gapWidth="40.0" />
+    </SceneRegular>-->
+  <SceneRegular name="SceneRegular17" Maker="QcSceneCircleRegularMaker"/>
+  <SceneRegular name="SceneRegular10" Maker="QcSceneCircleRegularMaker"/>
+  <SceneRegular name="SceneRegular18" Maker="QcSceneCircleRegularMaker"/>
+</SceneRegularList>
+<Gun class="QcResGunDesc">
+  <definition name="Gun1">
+    <Attribute SuperGun="0" Bullet="Bullet1" GunFireEffect="GunFireEffect" GunLevelFort="0" Minlevel="1"  Maxlevel="49" BulletSpeed="700" MinExplodeRadius="60" MaxExplodeRadius="90"/>
+    <states>
+      <state name="Dying" time="0.3" iscycle="0"/>
+    </states>
+  </definition>
+  <definition name="Gun4">
+    <Attribute SuperGun="0" Bullet="Bullet2" GunFireEffect="GunFireEffect" GunLevelFort="7" Minlevel="50"  Maxlevel="99" BulletSpeed="700" MinExplodeRadius="60" MaxExplodeRadius="90"/>
+    <states>
+      <state name="Dying" time="0.3" iscycle="0"/>
+    </states>
+  </definition>
+  <definition name="Gun5">
+    <Attribute SuperGun="0" Bullet="Bullet3" GunFireEffect="GunFireEffect" GunLevelFort="13" Minlevel="100" Maxlevel="10000" BulletSpeed="700" MinExplodeRadius="60" MaxExplodeRadius="90"/>
+    <states>
+      <state name="Dying" time="0.3" iscycle="0"/>
+    </states>
+  </definition>
+  <definition name="EnergyGun1">
+    <Attribute SuperGun="1" Bullet="Bullet6" GunFireEffect="GunFireEffect" GunLevelFort="0" Minlevel="1" Maxlevel="49" BulletSpeed="800" MinExplodeRadius="60" MaxExplodeRadius="90"/>
+    <states>
+      <state name="Dying" time="0.3" iscycle="0"/>
+    </states>
+  </definition>
+  <definition name="EnergyGun4">
+    <Attribute SuperGun="1" Bullet="Bullet7" GunFireEffect="GunFireEffect" GunLevelFort="7" Minlevel="50" Maxlevel="99" BulletSpeed="800" MinExplodeRadius="60" MaxExplodeRadius="90"/

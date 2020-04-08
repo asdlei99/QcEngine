@@ -1,0 +1,251 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="IOTestRelease|Win32">
+      <Configuration>IOTestRelease</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="TestRelease|Win32">
+      <Configuration>TestRelease</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{1EBDB7F1-2938-4BE7-9902-8438EABEA658}</ProjectGuid>
+    <RootNamespace>QcCore</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='IOTestRelease|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='TestRelease|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='IOTestRelease|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='TestRelease|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.40219.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)../Output/Bin/$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)../Output/Obj/$(Configuration)/$(ProjectName)\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)../Output/Bin/$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='IOTestRelease|Win32'">$(SolutionDir)../Output/Bin/$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='TestRelease|Win32'">$(SolutionDir)../Output/Bin/$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)../Output/Obj/$(Configuration)/$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='IOTestRelease|Win32'">$(SolutionDir)../Output/Obj/$(Configuration)/$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='TestRelease|Win32'">$(SolutionDir)../Output/Obj/$(Configuration)/$(ProjectName)\</IntDir>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='IOTestRelease|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='TestRelease|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='IOTestRelease|Win32'" />
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='TestRelease|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='IOTestRelease|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='TestRelease|Win32'" />
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\Dependent;$(SolutionDir)Vld\Include;.\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;QmTestVersion;_DEBUG;_LIB;QmTestVersion;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>Pch\Pch.hpp</PrecompiledHeaderFile>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\Dependent;$(SolutionDir)Vld\Include;.\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <PrecompiledHeaderFile>Pch\Pch.hpp</PrecompiledHeaderFile>
+      <ExceptionHandling>Async</ExceptionHandling>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='IOTestRelease|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>$(SolutionDir)Dependent;.\;.\..\;.\..\Vld\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;QmTestVersion;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <PrecompiledHeaderFile>Pch\Pch.hpp</PrecompiledHeaderFile>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <StringPooling>true</StringPooling>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='TestRelease|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\Dependent;$(SolutionDir)Vld\Include;.\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;QmTestVersion;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <PrecompiledHeaderFile>Pch\Pch.hpp</PrecompiledHeaderFile>
+      <ExceptionHandling>Async</ExceptionHandling>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Common\QcLogEngine.cpp" />
+    <ClCompile Include="Encrypt\aes.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='IOTestRelease|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='TestRelease|Win32'">NotUsing</PrecompiledHeader>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='IOTestRelease|Win32'">Full</Optimization>
+    </ClCompile>
+    <ClCompile Include="Encrypt\QcAESCrypt.cpp" />
+    <ClCompile Include="Encrypt\QcTEACrypt.cpp" />
+    <ClCompile Include="Encrypt\QiCrypt.cpp" />
+    <ClCompile Include="Math\rand.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='IOTestRelease|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='TestRelease|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Pch\Pch.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='IOTestRelease|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='TestRelease|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="DumpReport\QcCrashHandler.cpp" />
+    <ClCompile Include="DumpReport\QcStackWalker.cpp">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='IOTestRelease|Win32'">Disabled</Optimization>
+    </ClCompile>
+    <ClCompile Include="RuntimeSystem\QcClassFactory.cpp" />
+    <ClCompile Include="RuntimeSystem\QcRuntimeClass.cpp" />
+    <ClCompile Include="Thread\QcThread.cpp" />
+    <ClCompile Include="FileSystem\QcFileFinder.cpp" />
+    <ClCompile Include="FileSystem\QcFilePacker.cpp" />
+    <ClCompile Include="FileSystem\QcFileSystem.cpp" />
+    <ClCompile Include="QcApp.cpp" />
+    <ClCompile Include="XML\QcXmlLoader.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\QcCompileConfig.hpp" />
+    <ClInclude Include="Common\QcArray.hpp" />
+    <ClInclude Include="Common\QcAutoRevert.hpp" />
+    <ClInclude Include="Common\QcEfficiencyProfiler.hpp" />
+    <ClInclude Include="Common\QcHookFunction.hpp" />
+    <ClInclude Include="Common\QcLogEngine.hpp" />
+    <ClInclude Include="Common\QcNoCaseCompare.hpp" />
+    <ClInclude Include="Common\QcObject.hpp" />
+    <ClInclude Include="Common\QcReferenceCounted.hpp" />
+    <ClInclude Include="Common\QcSharedPtr.hpp" />
+    <ClInclude Include="Common\QcSingleton.hpp" />
+    <ClInclude Include="Common\QcStrToValue.hpp" />
+    <ClInclude Include="Encrypt\aes.h" />
+    <ClInclude Include="Encrypt\QcAESCrypt.hpp" />
+    <ClInclude Include="Encrypt\QcTEACrypt.hpp" />
+    <ClInclude Include="Encrypt\QiCrypt.hpp" />
+    <ClInclude Include="Math\rand.h" />
+    <ClInclude Include="Pch\Pch.hpp" />
+    <ClInclude Include="DumpReport\QcCrashHandler.hpp" />
+    <ClInclude Include="DumpReport\QcStackWalker.hpp" />
+    <ClInclude Include="DumpReport\QcStructException.hpp" />
+    <ClInclude Include="DumpReport\QcVectoredHandler.hpp" />
+    <ClInclude Include="Math\QcBox3d.hpp" />
+    <ClInclude Include="Math\QcCircle2d.hpp" />
+    <ClInclude Include="Math\QcDimension2d.hpp" />
+    <ClInclude Include="Math\QcLine2d.hpp" />
+    <ClInclude Include="Math\QcLine3d.hpp" />
+    <ClInclude Include="Math\QcMath.hpp" />
+    <ClInclude Include="Math\QcMathNodeInfo.hpp" />
+    <ClInclude Include="Math\QcMathTable.hpp" />
+    <ClInclude Include="Math\QcMatrix3.hpp" />
+    <ClInclude Include="Math\QcMatrix4.hpp" />
+    <ClInclude Include="Math\QcPlane3d.hpp" />
+    <ClInclude Include="Math\QcPolygon2d.hpp" />
+    <ClInclude Include="Math\QcRand.hpp" />
+    <ClInclude Include="Math\QcRect2d.hpp" />
+    <ClInclude Include="Math\QcVector2d.hpp" />
+    <ClInclude Include="Math\QcVector3d.hpp" />
+    <ClInclude Include="RuntimeSystem\QcClassFactory.hpp" />
+    <ClInclude Include="RuntimeSystem\QcRuntimeClass.hpp" />
+    <ClInclude Include="Thread\QcCriticalSection.hpp" />
+    <ClInclude Include="Thread\QcLock.hpp" />
+    <ClInclude Include="Thread\QcSyncObj.hpp" />
+    <ClInclude Include="Thread\QcThread.hpp" />
+    <ClInclude Include="FileSystem\QcFileFinder.hpp" />
+    <ClInclude Include="FileSystem\QcFilePacker.hpp" />
+    <ClInclude Include="FileSystem\QcFileSystem.hpp" />
+    <ClInclude Include="FileSystem\QcMemFile.hpp" />
+    <ClInclude Include="FileSystem\QcStdFile.hpp" />
+    <ClInclude Include="FileSystem\QcWinFile.hpp" />
+    <ClInclude Include="FileSystem\QiFile.hpp" />
+    <ClInclude Include="QcApp.hpp" />
+    <ClInclude Include="QcBaseType.hpp" />
+    <ClInclude Include="QcCore.hpp" />
+    <ClInclude Include="QcUtilFun.hpp" />
+    <ClInclude Include="QmCoreMacro.hpp" />
+    <ClInclude Include="XML\QcXml.hpp" />
+    <ClInclude Include="XML\QcXmlLoader.hpp" />
+    <ClInclude Include="XML\QcXmlNodeIterator.hpp" />
+    <ClInclude Include="XML\QcXmlWriter.hpp" />
+    <ClInclude Include="XML\rapidxml.hpp" />
+    <ClInclude Include="XML\rapidxml_print.hpp" />
+    <ClInclude Include="XML\rapidxml_utils.hpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

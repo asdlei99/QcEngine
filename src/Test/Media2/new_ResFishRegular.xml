@@ -1,0 +1,172 @@
+<RegularList>
+  <Regular name="Regular12" referencePath="4030" SceneRegularOnly="1">
+    <Item Kind="fish03" FishPos="(0,0)(-15,916)(182,126)(175,424)(254,280)(423,154)(550,280)(618,424)(562,608)(407,700)(244,631)(148,826)(-168,826)(-418,734)(-243,631)(-159,437)(-555,631)(-639,437)(-535,298)(-405,167)(-256,293)(-152,126)"/>
+    <Item Kind="fish14" FishPos="(419,406)(5,626)(-396,419)(2,232)"/>
+  </Regular>
+  <Regular name="Regular13" referencePath="4031" SceneRegularOnly="1">
+    <Item Kind="fish02" FishPos="(356,0)(-623,13)(122,-419)(224,-316)(334,-212)(442,-116)(522,5)(407,118)(285,252)(162,378)(-368,-419)(-482,-336)(-582,-226)(-699,-128)(-789,5)(-699,146)(-592,254)(-482,359)"/>
+    <Item Kind="fish07" FishPos="(0,0)(-108,-100)(-267,7)(-181,106)(-90,223)(0,330)(129,230)(254,124)(254,-116)(141,-213)(39,-307)(-199,-213)(-327,-302)(-431,-212)(-532,-94)(-522,124)(-431,230)(-327,337)"/>
+    <Item Kind="fish01" FishPos="(229,318)(357,183)(478,66)(485,-50)(384,-156)(279,-260)(172,-370)(-421,-370)(-525,-280)(-637,-174)(-732,-62)(-732,66)(-637,184)(-525,301)"/>
+  </Regular>
+  <Regular name="Regular14" referencePath="4014" SceneRegularOnly="1">
+    <Item Kind="fish15" FishPos="(-492,0)"/>
+    <Item Kind="fish17" FishPos="(0,0)"/>
+  </Regular>
+  <Regular name="Regular21" SceneRegularOnly="1">
+    <Item Kind="fish13" FishPos="(0,-144)(0,114)"/>
+    <Item Kind="fish17" FishPos="(-380,0)"/>
+    <Item Kind="fish10" FishPos="(-720,-144)(-720,114)"/>
+    <Item Kind="fish15" FishPos="(-1000,0)"/>
+  </Regular>
+  <Regular name="Regular24" referencePath="4045" SceneRegularOnly="1">
+    <Item Kind="fish17" FishPos="(0,0)"/>
+    <Item Kind="fish10" FishPos="(0,-300)(150,-175)(-150,-175)"/>
+  </Regular>
+  <Regular name="Regular25" referencePath="4045" SceneRegularOnly="1">
+    <Item Kind="fish17" FishPos="(0,0)"/>
+    <Item Kind="fish07" FishPos="(0,-300)(150,-175)(-150,-175)"/>
+  </Regular>
+  <Regular name="Regular28" referencePath="4052" SceneRegularOnly="1">
+    <Item Kind="fish15" FishPos="(0,0)"/>
+    <Item Kind="fish10" FishPos="(-0,250)(125,150)(-125,150)"/>
+  </Regular>
+  <Regular name="Regular29" referencePath="4052" SceneRegularOnly="1">
+    <Item Kind="fish15" FishPos="(0,0)"/>
+    <Item Kind="fish07" FishPos="(-0,250)(125,150)(-125,150)"/>
+  </Regular>
+  <Regular name="Regular30" SceneRegularOnly="1">
+    <Item Kind="fish10" FishPos="(0,0)"/>
+    <Item Kind="fish17" FishPos="(-350,0)"/>
+    <Item Kind="fish10" FishPos="(-700,0)"/>
+    <Item Kind="fish15" FishPos="(-1000,0)"/>
+  </Regular>
+  <Regular name="Regular31" SceneRegularOnly="1">
+    <Item Kind="fish10" FishPos="(0,0)"/>
+    <Item Kind="fish17" FishPos="(320,0)"/>
+    <Item Kind="fish10" FishPos="(700,0)"/>
+    <Item Kind="fish15" FishPos="(1000,0)"/>
+  </Regular>
+  <Regular name="Regular33" referencePath="4064" SceneRegularOnly="1">
+    <Item Kind="fish14" FishPos="(0,0)"/>
+    <Item Kind="fish01" FishPos="(151,-66)(98,-139)(41,-183)(-36,-206)(-113,-189)(-180,-131)(-219,-49)(-219,39)(-180,123)(-113,170)(-34,201)(41,162)(94,123)(150,39)"/>
+    <Item Kind="fish03" FishPos="(214,-3)(189,-106)(129,-190)(-41,-256)(-195,-201)(-274,-111)(-297,-3)(-275,98)(-195,195)(191,100)(118,196)(-41,251)"/>
+  </Regular>
+  <Regular name="Regular39" SceneRegularOnly="1">
+    <Item Kind="fish03" FishPos="(0.0)"/>
+    <Item Kind="fish02" FishPos="(180,0)"/>
+  </Regular>
+  <Regular name="Regular40" referencePath="4105" SceneRegularOnly="1">
+    <Item Kind="fish17" FishPos="(0,0)"/>
+    <Item Kind="fish16" FishPos="(994,-1)"/>
+    <Item Kind="fish07" FishPos="(397,23)(1420,13)"/>
+    <Item Kind="fish10" FishPos="(1207,-210)(1207,237)(193,-185)(193,192)"/>
+  </Regular>
+  <Regular name="Regular41" referencePath="4034" SceneRegularOnly="1">
+    <Item Kind="fish15" FishPos="(0,0)"/>
+    <Item Kind="fish01" FishPos="(-87,-205)(-227,-23)(77,-77)(-63,104)"/>
+  </Regular>
+  <Regular name="Regular42" referencePath="4104"  SceneRegularOnly="1">
+    <Item Kind="fish16" FishPos="(0,0)"/>
+    <Item Kind="fish13" FishPos="(468,3)"/>
+  </Regular>
+  <Regular name="Regular45" SceneRegularOnly="1">
+    <Item Kind="fish13" FishPos="(0,0)"/>
+    <Item Kind="fish01" FishPos="(80,80)(80,-80)(-80,-80)(-80,80)"/>
+    <Item Kind="fish10" FishPos="(-250,0)"/>
+    <Item Kind="fish01" FishPos="(-200,80)(-200,-80)(-320,-80)(-320,80)"/>
+    <Item Kind="fish07" FishPos="(-460,0)"/>
+    <Item Kind="fish01" FishPos="(-420,80)(-420,-80)(-520,-80)(-520,80)"/>
+  </Regular>
+  <Regular name="Regular46" SceneRegularOnly="1">
+    <Item Kind="fish14" FishPos="(0,0)"/>
+    <Item Kind="fish01" FishPos="(80,80)(80,-80)(-80,-80)(-80,80)"/>
+    <Item Kind="fish09" FishPos="(-250,0)"/>
+    <Item Kind="fish01" FishPos="(-200,80)(-200,-80)(-320,-80)(-320,80)"/>
+    <Item Kind="fish07" FishPos="(-440,0)"/>
+    <Item Kind="fish01" FishPos="(-420,80)(-420,-80)(-520,-80)(-520,80)"/>
+  </Regular>
+</RegularList>
+<SceneRegularList>
+  <SceneRegular name="SceneRegular01" >
+    <Item fish="fish02" path="4010" livingTime="17.0"  count="0" gapWidth="20." />
+    <Item fish="fish02" path="4011" livingTime="17.0"  count="0" gapWidth="20." />
+    <Item fish="fish02" path="4012" livingTime="17.0"  count="0" gapWidth="20." />
+    <Item fish="fish02" path="4013" livingTime="17.0"  count="0" gapWidth="20." />
+    <Item regular="Regular14" DynPath="0,0,0"  livingTime="15.0"  count="0" gapWidth="20." />
+    <Item fish="fish01" path="4100" startTime="31.0" livingTime="19.0"  count="0" gapWidth="20." />
+    <Item fish="fish01" path="4101" startTime="31.0" livingTime="19.0"  count="0" gapWidth="20." />
+    <Item fish="fish01" path="4102" startTime="31.0" livingTime="19.0"  count="0" gapWidth="20." />
+    <Item fish="fish01" path="4103" startTime="31.0" livingTime="19.0"  count="0" gapWidth="20." />
+    <Item regular="Regular42" DynPath="0,0,180" startTime="32.0" livingTime="12.0"  count="0"  gapWidth="20.0" />
+  </SceneRegular>
+  <SceneRegular name="SceneRegular02">
+    <Item fish="fish01" path="4020" livingTime="20.0"  count="0" gapWidth="20.0" />
+    <Item fish="fish07" path="4021" livingTime="18.0"  count="0" gapWidth="20.0" />
+    <Item fish="fish01" path="4022" livingTime="15.0"  count="0" gapWidth="20.0" />
+    <Item fish="fish01" path="4023" livingTime="15.0"  count="0" gapWidth="20.0" />
+    <Item fish="fish07" path="4024" livingTime="18.0"  count="0" gapWidth="20.0" />
+    <Item fish="fish01" path="4025" livingTime="20.0"  count="0" gapWidth="20.0" />
+    <Item regular="Regular40" DynPath="0,0,180" startTime="27.0" livingTime="23.0" count="0" gapWidth="20.0" />
+    <Item regular="Regular39" DynPath="0,350,180" startTime="27.0" livingTime="30.0" count="0" gapWidth="30.f" />
+    <Item regular="Regular39" DynPath="0,-350,180" startTime="27.0" livingTime="30.0" count="0" gapWidth="30.f" />
+  </SceneRegular>
+  <SceneRegular name="SceneRegular06">
+    <Item regular="Regular12" DynPath="0,0,270" startTime="25.0" livingTime="14.0" count="0" gapWidth="200.0" />
+    <Item regular="Regular13" DynPath="0,0,90"  livingTime="14.0"  count="0" gapWidth="200.0" />
+  </SceneRegular>
+  <SceneRegular name="SceneRegular7">
+    <Item regular="Regular45" path="4032"  livingTime="40.0" count="0" gapWidth="20.0" />
+    <Item regular="Regular45" path="4033"  livingTime="40.0" count="0" gapWidth="20.0" />
+    <Item regular="Regular46" path="4034"  livingTime="40.0" count="0" gapWidth="20.0" />
+    <Item regular="Regular46" path="4035"  livingTime="40.0" count="0" gapWidth="20.0" />
+  </SceneRegular>
+  <SceneRegular name="SceneRegular08">
+    <Item fish="fish01" path="4036"  startTime="21.0" livingTime="26.0" count="0" gapWidth="20.0" />
+    <Item fish="fish01" path="4037"  startTime="21.0" livingTime="26.0" count="0"  gapWidth="20.0" />
+    <Item regular="Regular21" DynPath="0,0,180" startTime="23.0" count="3" gapWidth="20.0" />
+    <Item fish="fish02" path="4112" livingTime="20.0"  count="0" gapWidth="20.0" />
+    <Item fish="fish02" path="4115" livingTime="20.0"  count="0" gapWidth="20.0" />
+    <Item fish="fish03" path="4113" livingTime="20.0"  count="0" gapWidth="20.0" />
+    <Item fish="fish03" path="4114" livingTime="20.0"  count="0" gapWidth="20.0" />
+  </SceneRegular>
+  <SceneRegular name="SceneRegular09">
+    <Item fish="fish01" path="4039"  livingTime="14.0" count="0" gapWidth="20.0" />
+    <Item fish="fish04" path="4040"  livingTime="14.0" count="0" gapWidth="20.0" />
+    <Item fish="fish01" path="4041"  livingTime="14.0" count="0" gapWidth="20.0" />
+    <Item fish="fish02" path="4042"  livingTime="14.0" count="0" gapWidth="20.0" />
+    <Item fish="fish04" path="4043"  livingTime="14.0" count="0" gapWidth="20.0" />
+    <Item fish="fish02" path="4044"  livingTime="14.0" count="0" gapWidth="20.0" />
+    <Item regular="Regular24" DynPath="0,0,90"   startTime="1.0" count="1"  gapWidth="20.0" />
+    <Item regular="Regular25" DynPath="0,0,90"   startTime="5.0" count="2"  gapWidth="20.0" />
+    <Item fish="fish01" path="4046"   startTime="28.0" livingTime="14.0" count="0" gapWidth="20.0" />
+    <Item fish="fish02" path="4047" startTime="28.0" livingTime="14.0" count="0"  gapWidth="20.0" />
+    <Item fish="fish01" path="4048" startTime="28.0" livingTime="14.0" count="0" gapWidth="20.0" />
+    <Item fish="fish01" path="4049" startTime="28.0" livingTime="14.0" count="0" gapWidth="20.0" />
+    <Item fish="fish02" path="4050" startTime="28.0" livingTime="14.0" count="0"  gapWidth="20.0" />
+    <Item fish="fish01" path="4051" startTime="28.0" livingTime="14.0" count="0" gapWidth="20.0" />
+    <Item regular="Regular28" DynPath="0,0,270" startTime="29.0" count="1"  gapWidth="20.0" />
+    <Item regular="Regular29" DynPath="0,0,270" startTime="33.0" count="2"  gapWidth="80.0" />
+  </SceneRegular>
+  <SceneRegular name="SceneRegular15">
+    <Item fish="fish02" path="4053"  livingTime="45.0" count="0" gapWidth="20.0" />
+    <Item fish="fish02" path="4054"  livingTime="45.0" count="0"  gapWidth="20.0" />
+    <Item fish="fish01" path="4055"  livingTime="45.0" count="0" gapWidth="20.0" />
+    <Item fish="fish01" path="4056"  livingTime="45.0" count="0" gapWidth="20.0" />
+    <Item regular="Regular30" DynPath="0,-250,0"  livingTime="37.0" count="0" gapWidth="20.0" />
+    <Item fish="fish01" DynPath="0,-350,0"  livingTime="40.0" count="0" gapWidth="20.0" />
+    <Item regular="Regular31" DynPath="0,250,180"  livingTime="37.0" count="0" gapWidth="20.0" />
+    <Item fish="fish02" DynPath="0,350,180"  livingTime="40.0" count="0" gapWidth="20.0" />
+  </SceneRegular>
+  <!--Removed SceneRegular16-->
+  <!--<SceneRegular name="SceneRegular16">
+      <Item fish="fish03" path="4059"  livingTime="25.0" count="0" gapWidth="20.0" />
+      <Item fish="fish10" path="4060"  livingTime="25.0" count="0"  gapWidth="20.0" />
+      <Item fish="fish04" path="4061"  livingTime="25.0" count="0" gapWidth="20.0" />
+      <Item fish="fish07" path="4062"  livingTime="25.0" count="0" gapWidth="20.0" />
+      <Item regular="Regular33" path="4063"  startTime="27.0.0" livingTime="20.0" count="0" gapWidth="40.0" />
+      <Item regular="Regular33" path="4064"  startTime="27.0.0" livingTime="20.0" count="0" gapWidth="40.0" />
+    </SceneRegular>-->
+  <SceneRegular name="SceneRegular17" Maker="QcSceneCircleRegularMaker"/>
+  <SceneRegular name="SceneRegular10" Maker="QcSceneCircleRegularMaker"/>
+  <SceneRegular name="SceneRegular18" Maker="QcSceneCircleRegularMaker"/>
+</SceneRegularList>

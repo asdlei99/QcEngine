@@ -1,0 +1,277 @@
+/>
+  <definition name="StartLine"/>
+  <definition name="StartLineLabel"/>
+  <definition name="StartMatchineIdLabel"/>
+  <definition name="StartVersionLabel"/>
+  <definition name="StartTimeFormat"/>
+  <definition name="StartWeek" ListClass="QcResImageListDesc" class="QcResImageDesc"/>
+  <definition name="StartDigital" class="QcResDigitalDesc"/>
+  <definition name="StartMinius"/>
+  <definition name="StartV"/>
+</Image><Setting class="QcResDialogDesc">
+  <Dialog name="SettingMain" size="1300,900" BackGround="DialogBg" SelectFlag="DialogSelectFlag" SelectBg="DialogItemSelection">
+    <Items>
+      <Item type="Button" name="MainParameterSetting" Pos="-74,200" size="160,60" Align="LeftCenter" Tip="MainParameterSettingTip" Action="OnShowParaSetting"/>
+      <Item type="Button" name="MainDecodeSetting" Pos="-74,120" size="160,60" Align="LeftCenter" Tip="MainDecodeSettingTip" Action="OnShowDecodeSetting"/>
+      <Item type="Button" name="MainAccountChecked" Pos="-74,40" size="80,60" Align="LeftCenter" Tip="MainAccountCheckedTip" Action="OnShowCheckAccount"/>
+      <Item type="Button" name="MainAccountShow" Pos="-74,-40" size="80,60" Align="LeftCenter" Tip="MainAccountShowTip" Action="OnShowAccount"/>
+      <Item type="Button" name="MainSystemSetting" Pos="-74,-120" size="160,60" Align="LeftCenter" Tip="MainSystemSettingTip" Action="OnShowSystemSetting"/>
+      <Item type="Button" name="MainExit" Pos="-74,-200" size="80,60" Align="LeftCenter" Tip="MainExitTip" Action="OnMainExit"/>
+    </Items>
+    <TipArea>
+      <Tip name="Tip" Pos="-08,-385" size="1000,100" Align="CenterBottom"/>
+    </TipArea>
+    <Static>
+      <Static type="Static" name="MainCaption" Pos="0,379"/>
+    </Static>
+  </Dialog>
+  <Dialog name="ParameterSetting" size="1000,800" BackGround="DialogBg" SelectFlag="DialogSelectFlag" SelectBg="DialogItemSelection" Action="OnParameterSetting">
+    <Items>
+      <Item type="Static" name="ParasetDiffLabel" Pos="-313,320" size="760,40" Align="LeftCenter">
+        <Item type="Enum" ID="1" Pos="700,0" Align="RightCenter" ContentList="ParasetDiff"/>
+      </Item>
+      <Item type="Static" name="ParasetLotteryRatio" Pos="-313,285" size="760,40" Align="LeftCenter">
+        <Item type="Static" name="ParasetLotteryRatioUnit1" Pos="615,0" Align="RightCenter"/>
+        <Item type="Static" name="ParasetLotteryRatioUnit2" Pos="700,0" Align="RightCenter"/>
+        <Item type="Digital" ID="2" Pos="580,0" Align="RightCenter" min="1" max="100" step="1" Res="DigitalMaxYaFen"/>
+        <Item type="Digital" ID="3" Pos="670,0" Align="RightCenter" min="1" max="100" step="1" Res="DigitalMaxYaFen"/>
+      </Item>
+      <Item type="Static" name="ParasetGameModeLabel" Pos="-313,250" size="760,40" Align="LeftCenter">
+        <Item type="Enum" ID="4" Pos="674,0" Align="RightCenter" ContentList="ParasetGameMode"/>
+      </Item>
+      <Item type="Static" name="ParasetMachineTypeLabel" Pos="-313,215" size="760,40" Align="LeftCenter">
+        <Item type="Enum" ID="5" Pos="700,0" Align="RightCenter" ContentList="ParasetMachineType">
+          <Tip Pos="720,0" Align="LeftCenter" ContentList="ParasetMachineTypeTip"/>
+        </Item>
+      </Item>
+      <Item type="Static" name="ParasetAdditionGunLevel" Pos="-313,180" size="760,40" Align="LeftCenter">
+        <Item type="Static" name="ParasetAdditionGunLevelUnit" Pos="700,0" Align="RightCenter"/>
+        <Item type="Digital" ID="6" Pos="670,0" Align="RightCenter" min="1" max="1000" step="1" Res="DigitalMaxYaFen"/>
+      </Item>
+      <Item type="Static" name="ParasetMinGunLevel" Pos="-313,145" size="760,40" Align="LeftCenter">
+        <Item type="Digital" ID="7" Pos="545,0" Align="RightCenter" min="1" max="10000" step="1" Res="DigitalMinYaFen" Action="OnExchangeMinGunLevel"/>
+        <Item type="Static" name="ParasetAdditionGunLevelUnit" Pos="575,0" Align="RightCenter"/>
+      </Item>
+      <Item type="Static" name="ParasetMaxGunLevel" Pos="-313,110" size="760,40" Align="LeftCenter">
+        <Item type="Digital" ID="8" Pos="545,0" Align="RightCenter" min="1" max="10000" step="1" Res="DigitalMaxYaFen" Action="OnExchangeMaxGunLevel"/>
+        <Item type="Static" name="ParasetAdditionGunLevelUnit" Pos="575,0" Align="RightCenter"/>
+      </Item>
+      <Item type="Static" name="ParasetBaoJiBet" Pos="-313,75" size="760,40" Align="LeftCenter">
+        <Item type="Static" name="ParasetBaoJiBetUnit" Pos="700,0" Align="RightCenter"/>
+        <Item type="Digital" ID="9" Pos="670,0" Align="RightCenter" min="1" max="9000" step="1" Res="DigitalMaxYaFen"/>
+      </Item>
+      <Item type="Static" name="ParasetBiBeiBaoJiBet" Pos="-311,40" size="760,40" Align="LeftCenter">
+        <Item type="Static" name="ParasetBaoJiBetUnit" Pos="675,0" Align="RightCenter"/>
+        <Item type="Digital" ID="11" Pos="645,0" Align="RightCenter" min="2" max="100" step="2" Res="DigitalMaxYaFen"/>
+      </Item>
+      <Item type="Static" name="ParasetResolution" Pos="-313,5" size="760,40" Align="LeftCenter">
+        <Item type="Enum" ID="10" Pos="685,0" Align="RightCenter" ContentList="ParasetRes"/>
+      </Item>
+      <Item type="Button" name="ParasetRecover" Pos="-313,-30" size="120,35" Align="LeftCenter" Action="OnParasetRecover"/>
+      <Item type="Button" name="ParasetSaveExit" Pos="-313,-65" size="120,35" Align="LeftCenter" Action="OnParasetSaveExit"/>
+      <Item type="Button" name="ParasetNoSaveExit" Pos="-313,-100" size="120,35" Align="LeftCenter" Action="OnParasetNoSaveExit"/>
+    </Items>
+    <TipArea>
+      <Tip name="Tip" Pos="0,-350" size="1000,100" Align="CenterBottom"/>
+    </TipArea>
+    <Static>
+      <Static type="Static" name="ParasetCaption" Pos="-150,379" Align="LeftCenter"/>
+      <Static type="Static" name="ParasetWarnin" Pos="550,-320" Align="RightBottom"/>
+      <Static type="Static" name="Status" Pos="0,-400" Align="CenterBottom"/>
+    </Static>
+  </Dialog>
+  <Dialog name="DecodeSetting" size="1000,800" BackGround="DialogBg" SelectFlag="DialogSelectFlag" SelectBg="DialogItemSelection" Action="OnDecodeSetting">
+    <Items>
+      <Item type="Static" name="DecodeSettingShowCaption" Pos="-150,379" Align="LeftCenter"/>
+      <Item type="Button" name="DecodeSettingLabel" Pos="-74,-140" size="160,60" Align="LeftCenter" Action="OnDecodeSettingBtn"/>
+      <Item type="Button" name="DecodeSettingExitLabel" Pos="-38,-200" size="80,60" Align="LeftCenter" Action="OnDecodeSettingExitBtn"/>
+      <Item type="Static" name="DecodeSettingTip3" Pos="-625,-305" Align="LeftCenter"/>
+      <Item type="Static" name="DecodeSettingTip2" Pos="-625,-335" Align="LeftCenter"/>
+      <Item type="Static" name="DecodeSettingTip4" Pos="-292,-307" Align="LeftCenter"/>
+      <Item type="Static" name="DecodeSettingTip5" Pos="-196,-337" Align="LeftCenter"/>
+      <Item type="Static" name="DecodeGreenpoint" Pos="-150,-391" Align="LeftCenter"/>
+      <Item type="Static" name="DecodeRedpoint" Pos="80,-391" Align="LeftCenter"/>
+      <Item type="Static" name="DecodeYiDong" Pos="-120,-391" Align="LeftCenter"/>
+      <Item type="Static" name="DecodeQueDing" Pos="110,-391" Align="LeftCenter"/>
+    </Items>
+    <Static>
+      <Item type="Static" name="DecodeSettingCoinRatioLabel" Pos="-300,200" Align="LeftCenter"/>
+      <Item type="Digital" ID="1" Pos="95,200" Align="RightCenter" min="1" max="100" step="1" Res="DigitalSysTime"/>
+      <Item type="Static" name="DecodeSettingCoinLabel" Pos="110,200" Align="LeftCenter"/>
+      <Item type="Digital"  ID="2" Pos="180,200" Align="RightCenter" min="1" max="100" step="1" Res="DigitalSysTime"/>
+      <Item type="Static" name="DecodeSettingScoreLabel" Pos="220,200" Align="RightCenter"/>
+        
+      <Item type="Static" name="DecodeSettingChangDiLabel" Pos="-300,150" Align="LeftCenter"/>
+      <Item type="Enum" ID="3" Pos="220,150" Align="RightCenter" ContentList="DecodeSettingChangDi"/>
+      <Item type="Static" name="DecodeSettingDayCountLabel" Pos="-300,100" Align="LeftCenter">
+        <Item type="Digital" ID="4" Pos="430,0" Align="RightCenter" min="1" max="100" step="1" Res="DigitalDayCount"/>
+        <Item type="Static" name="DecodeSettingDayCount" Pos="475,0" Align="RightCenter"/>
+      </Item>
+      <Items type="Static" name="DecodeSettingSysTimeLabel" Pos="-300,50" Align="LeftCenter"/>
+      <Item type="DigitalList" ID="5" Pos="220,50" Align="RightCenter" Bits="8" Res="DigitalSysTime" Action="OnDecodeSettingSysTime" UpdateTime="1"/>
+      <Item type="Static" name="DecodeSettingShowLabel" Pos="-300,0" Align="LeftCenter"/>
+      <Item type="Enum" ID="6" Pos="220,0" Align="RightCenter" Content="DecodeSettingShow_00;DecodeSettingShow_01"/>
+      <Static type="Static" name="DecodeSettingWarningX" Pos="260,220" Align="LeftTop"/>
+    </Static>
+    <TipArea>
+      <Tip name="Tip" Pos="-150,-290" size="1000,100" Align="CenterBottom"/>
+      <Tip name="Tip" Pos="0,-290" size="1000,100" Align="CenterBottom"/>
+    </TipArea>
+  </Dialog>
+  <Dialog name="DecodeInputDlg" BackGround="DecodeInputDlg" Action="OnDecodeInput">
+    <Items>
+      <Item type="DigitalList" ID="1" Pos="53,79" Align="Center" Bits="8" AcceptInput="0" Gap =" 5.0" Res="DigitalJiTaiHao"/>
+      <Item type="DigitalList" ID="2" Pos="88,10" Align="Center" Bits="8" AcceptInput="0" Gap =" 5.0" Res="DigitalTeZhengMa"/>
+      <Item type="DigitalList" ID="4" Pos="6,-85" Align="Center" Bits="12"   Res="DigitalDaMa" />
+      <Static type="Static" ID="5" name="DecodeSettingError" Pos="0,-261" Align="Center"/>
+    </Items>
+  </Dialog>
+  <Dialog name="CheckAccount" size="1000,800" BackGround="DialogBg" SelectFlag="DialogSelectFlag" SelectBg="DialogItemSelection" Action="OnCheckAccount">
+    <Items>
+      <Items type="Button" name="CheckExit" Pos="450,-300" size="80,60" Align="RightCenter" Action="OnCheckExit"/>
+    </Items>
+    <Static>
+      <Static type="Static" name="CheckShowCaption" Pos="-150,379" Align="LeftCenter"/>
+      <Item type="Static" name="CheckTotalProfit" Pos="-200,300" Align="LeftCenter"/>
+      <Item type="Static" name="CheckCoinUnit" Pos="200,300" Align="RightCenter"/>
+      <Item type="Digital" ID="1" Pos="170,300" Align="RightCenter" Bits="8" Res="DialogDigital"/>
+      <Item type="Static" name="CheckLastProfit" Pos="-200,260" Align="LeftCenter"/>
+      <Item type="Static" name="CheckCoinUnit" Pos="200,260" Align="RightCenter"/>
+      <Item type="Digital" ID="2" Pos="170,260" Align="RightCenter" Bits="8" Res="DialogDigital"/>
+      <Item type="Static" name="CheckCurrentProfit" Pos="-200,220" Align="LeftCenter"/>
+      <Item type="Static" name="CheckCoinUnit" Pos="200,220" Align="RightCenter"/>
+      <Item type="Digital" ID="3" Pos="170,220" Align="RightCenter" Bits="8" Res="DialogDigital"/>
+      <Item type="Static" name="CheckInScore" Pos="-200,180" Align="LeftCenter"/>
+      <Item type="Static" name="CheckCoinUnit" Pos="200,180" Align="RightCenter"/>
+      <Item type="Digital" ID="4" Pos="170,180" Align="RightCenter" Bits="8" Res="DialogDigital"/>
+      <Item type="Static" name="CheckOutScore" Pos="-200,140" Align="LeftCenter"/>
+      <Item type="Static" name="CheckCoinUnit" Pos="200,140" Align="RightCenter"/>
+      <Item type="Digital" ID="5" Pos="170,140" Align="RightCenter" Bits="8" Res="DialogDigital"/>
+      <Item type="Static" name="CheckInCoin" Pos="-200,100" Align="LeftCenter"/>
+      <Item type="Static" name="CheckCoinUnit" Pos="200,100" Align="RightCenter"/>
+      <Item type="Digital" ID="6" Pos="170,100" Align="RightCenter" Bits="8" Res="DialogDigital"/>
+      <Item type="Static" name="CheckOutCoin" Pos="-200,60" Align="LeftCenter"/>
+      <Item type="Static" name="CheckCoinUnit" Pos="200,60" Align="RightCenter"/>
+      <Item type="Digital" ID="7" Pos="170,60" Align="RightCenter" Bits="8" Res="DialogDigital"/>
+      <Item type="Static" name="CheckOutLottery" Pos="-200,20" Align="LeftCenter"/>
+      <Item type="Static" name="CheckScoreUnit" Pos="200,20" Align="RightCenter"/>
+      <Item type="Digital" ID="8" Pos="170,20" Align="RightCenter" Bits="8" Res="DialogDigital"/>
+      <Item type="Static" name="CheckLineNumber" Pos="-200,-20" Align="LeftCenter"/>
+      <Item type="DigitalList" ID="9" Pos="200,-20" Align="RightCenter" Bits="3" Res="DialogDigital"/>
+      <Item type="Static" name="CheckMatchineID" Pos="-200,-60" Align="LeftCenter"/>
+      <Item type="DigitalList" ID="10" Pos="200,-60" Align="RightCenter" Bits="8" Res="DialogDigital"/>
+      <Item type="Static" name="CheckLeaveTime" Pos="-200,-100" Align="LeftCenter"/>
+      <Item type="Static" name="CheckTimeUnit" Pos="200,-100" Align="RightCenter"/>
+      <Item type="Digital" ID="11" Pos="150,-100" Align="RightCenter" Bits="8" Res="DialogDigital"/>
+      <Item type="Static" name="CheckNumber" Pos="-200,-140" Align="LeftCenter"/>
+      <Item type="Static" name="CheckNumberUnit" Pos="200,-140" Align="RightCenter"/>
+      <Item type="Digital" ID="12" Pos="170,-140" Align="RightCenter" Bits="8" Res="DialogDigital"/>
+    </Static>
+  </Dialog>
+  <Dialog name="Account" size="1000,800" BackGround="DialogBg" DlgClass="QcAccountShowDlg" Action="OnAccount">
+    <Static>
+      <Static type="Static" name="AccountShowCaption" Pos="-50,379" Align="LeftCenter"/>
+      <Item type="Static" name="AccountShowTotalProfit" Pos="-256,300" size="512,32" Align="LeftCenter" />
+      <Item type="Static" name="AccountShowTotalProfitUnit" Pos="200,300" Align="RightCenter"/>
+      <Item type="Digital" ID="1" Pos="175,300" Align="RightCenter" min="1" max="10" step="1" Res="DialogDigital"/>
+      <Item type="Static" name="AccountShowProfit" Pos="-256,260" size="512,32" Align="LeftCenter" />
+      <Item type="Static" name="AccountShowProfitUnit" Pos="200,260" Align="RightCenter"/>
+      <Item type="Digital" ID="2" Pos="175,260" Align="RightCenter" min="1" max="10" step="1" Res="DialogDigital"/>        
+      <Item type="Static" name="AccountShowMatchineID" Pos="-256,220" size="512,32" Align="LeftCenter" />
+      <Item type="DigitalList" ID="3" Pos="200,220" Align="RightCenter" Bits="8" Res="DialogDigital"/>
+      <Item type="Static" name="AccountShowTime" Pos="-256,180" size="512,32" Align="LeftCenter" />
+      <Item type="Static" name="AccountShowTimeUnit" Pos="200,180" Align="RightCenter"/>
+      <Item type="Digital" ID="4" Pos="175,180" Align="RightCenter" min="1" max="10" step="1" Res="DialogDigital"/>
+      <Item type="Static" name="AccountShowCheckCode" Pos="-256,140" size="512,32" Align="LeftCenter" />
+      <Item type="DigitalList" ID="5" Pos="200,140" Align="RightCenter" Bits="5" Res="DialogDigital"/>
+      
+
+      <Item type="Static" ID="100" name="AccountShowInputCode" Pos="-256,0"  Align="LeftCenter"/>
+      <Item type="DigitalList" ID="101" Pos="0,0" Align="LeftCenter" Bits="8" Res="DialogDigital"/>
+      <Item type="Static" ID="102" name="AccountShowWaitting" Pos="-256,-50" Align="LeftCenter"/>
+      <Item type="Static" ID="103" name="AccountShowSucc" Pos="-256,-100"  Align="LeftCenter"/>
+      <Item type="Static" ID="104" name="AccountShowError" Pos="-256,-100"  Align="LeftCenter"/>
+      <Item type="Digital" ID="105" Pos="-106,-100" Align="LeftCenter" min="1" max="10" step="1" Res="DialogDigital"/>
+    </Static>
+    <Parameter>
+      <String CheckCodeDlg="CheckCodeDlg"/>
+      <Point CheckCodeDlgPos="0,-80"/>
+    </Parameter>
+  </Dialog>
+  <Dialog name="CheckCodeDlg" BackGround="CheckCodeDlgBg">
+    <Items>
+      <Item type="DigitalList" ID="100" Pos="0,0" Align="Center" Bits="8" Gap =" 12.0" Res="DigitalDaMa"/>
+    </Items>
+  </Dialog>
+  <Dialog name="AccountMenu" BackGround="DialogBg" SelectFlag="DialogSelectFlag" SelectBg="DialogItemSelection" Action="OnAccountMenu">
+    <Items>
+      <Item type="Button" name="AccountMenuDelay" Pos="-100,260" size ="160,60" Align="LeftCenter" Action="OnAccountMenuDelay"/>
+      <Item type="Button" name="AccountMenuDaMa" Pos="-100,200" size ="160,60" Align="LeftCenter" Action="OnAccountMenuDaMa"/>
+      <Item type="Static" name="DecodeSettingTip3" Pos="-630,-315" Align="LeftCenter"/>
+      <Item type="Static" name="DecodeSettingTip2" Pos="-630,-342" Align="LeftCenter"/>
+      <Item type="Static" name="AccountMenuRedpoint" Pos="-215,-391" Align="LeftCenter"/>
+      <Item type="Static" name="AccountMenuYiDong" Pos="-195,-391" Align="LeftCenter"/>
+      <Item type="Static" name="AccountMenuYellowpoint" Pos="-59,-391" Align="LeftCenter"/>
+      <Item type="Static" name="AccountMenuXiuGai" Pos="-37,-391" Align="LeftCenter"/>
+      <Item type="Static" name="AccountMenuGreenpoint" Pos="125,-391" Align="LeftCenter"/>
+      <Item type="Static" name="AccountMenuQueDing" Pos="150,-391" Align="LeftCenter"/>
+      <Item type="Static" name="AccountMenuWaring1" Pos="-482,-315" Align="LeftCenter"/>
+      <Item type="Static" name="AccountMenuWaring2" Pos="-229,-342" Align="LeftCenter"/>
+    </Items>
+    <Static>
+      <Item type="Static" ID="3" name="AccountMenuDelayTip"  Pos="-100,-50" Align="LeftCenter"/>
+      <Item type="Digital" ID="4" Pos="70,-50" Align="LeftCenter" min="1" max="10" step="1" Res="DialogDigital" Action="OnDelayTimeUpdate" UpdateTime="1"/>
+    </Static>
+  </Dialog>
+  <Dialog name="AccountWarning" BackGround="AccountWarningBg" SelectBg="DialogItemSelection">
+    <Items>
+      <Item type="Button" name="AccountWarningYes" Pos="-100,0" Align="LeftCenter" Action="OnAccountWarningYes"/>
+      <Item type="Button" name="AccountWarningNo" Pos="100,0" Align="RightCenter" Action="OnAccountWarningNo"/>
+    </Items>
+  </Dialog>
+  <Dialog name="Reboot" size="1000,800" BackGround="DialogBg">
+    <Static>
+      <Item type="Static" name="RebootDialogTip"/>
+      <Item type="Digital" Pos="-25,0" Align="LeftCenter" min="1" max="10" step="1" Res="DigitalReBoot" Action="OnRebootTimeUpdate" UpdateTime="1"/>
+    </Static>
+  </Dialog>
+  <Dialog name="PasswordDlg" size="1000,800" BackGround="PasswordDialogBg" Action="OnPasswordInput">
+    <Items>
+      <Item type="DigitalList" ID="1" Pos="0,0" Align="Center" Bits="8" Gap =" 12.0" Res="DigitalSystem"/>
+    </Items>
+  </Dialog>
+  <Dialog name="SysLineNumEditor" size="1000,800" BackGround="DialogBg" Action="OnEndLineNumEditor">
+    <Items>
+      <Item type="Static" name="SysSettingLineNumLabel" Pos="0,30"/>
+      <Item type="DigitalList" ID="1" Pos="100,30" Bits="3" Res="DialogDigital"/>
+      
+      <Item type="Static" name="SysSettingVersionLabel" Pos="0,-30"/>
+      <Item type="Static" name="SysSettingVersion1" Pos="100,-30"/>
+      <Item type="DigitalList" ID="2" Pos="130,-30" Bits="3" Res="DialogDigital"/>
+      <Item type="Static" name="SysSettingVersion2" Pos="170,-30"/>
+      <Item type="DigitalList" ID="3" Pos="180,-30" Bits="3" Res="DialogDigital"/>
+    </Items>
+  </Dialog>
+  <Dialog name="SysMatchineIDEditor" size="1000,800" BackGround="DialogBg" Action="OnEndMatchineIDEditor">
+    <Items>
+      <Item type="Static" name="SysSettingMathineIDLabel"/>
+      <Item type="DigitalList" ID="1" Pos="200,0" Bits="8" Res="DialogDigital"/>
+    </Items>
+  </Dialog>
+  <Dialog name="SysDaMaPasswordEditor" size="1000,800" BackGround="DialogBg" Action="OnEndDaMaPasswordEditor">
+    <Items>
+      <Item type="Static" name="SysSettingDaMaPasswordLabel"/>
+      <Item type="DigitalList" ID="1" Pos="200,0" Bits="8" Res="DialogDigital"/>
+    </Items>
+  </Dialog>
+  <Dialog name="SysExDifficultCheck" size="1000,800" BackGround="DialogBg" Action="OnExDifficultCheck">
+    <Static>
+      <Item type="Static" name="SysSettingRandCodeLabel" Align="RightCenter"/>
+      <Item type="DigitalList" ID="1" Pos="10,0" Align="LeftCenter" Bits="8" Res="DialogDigital"/>
+    </Static>
+    <Items>
+      <Item type="Static" name="SysSettingCheckLabel" Pos="0,-40" Align="RightCenter"/>
+      <Item type="DigitalList" ID="2" Pos="10,-40" Bits="8" Res="DialogDigital" Align="LeftCenter"/>
+    </Items>
+  </Dialog>
+  <Dialog name="SysExDifficult" size="1000,800" BackGround="DialogBg" SelectFlag="DialogSelectFlag" SelectBg="DialogItemSelect

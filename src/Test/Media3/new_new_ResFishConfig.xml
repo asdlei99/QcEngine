@@ -1,0 +1,64 @@
+58,6,26)(-52,-7,25)"/>
+    </border>
+  </definition>
+  
+  <definition name="fish09">
+    <Attribute score="9"/>
+    <border>
+      <definition type="circle" value="(12,0,58))"/>
+    </border>
+  </definition>
+  
+  <definition name="fish10">
+    <Attribute score="10"/>
+    <border>
+      <definition type="circle" value="(52,-4,33)(16,1,42)(-14,3,34)(-55,7,14)(-52,-21,14)"/>
+    </border>
+  </definition>
+</Fish><FishConfig FishFillTime="1" >
+  <FishKind name="Small" min="45" max="50" random="0.8" PathType="0">
+    <Fish name="fish01" min="9" max="12" random="0.90" ScenePathType="0"/>
+    <Fish name="fish02" min="9" max="12" random="0.90" ScenePathType="0"/>
+    <Fish name="fish03" min="6" max="10" random="0.85" ScenePathType="0"/>
+    <Fish name="fish04" min="3" max="6" random="0.80" ScenePathType="1"/>
+    <Fish name="fish05" min="3" max="6" random="0.75" ScenePathType="0"/>
+    <Fish name="fish06" min="2" max="5" random="0.60" ScenePathType="1"/>
+    <Fish name="fish07" min="2" max="4" random="0.55" ScenePathType="1"/>
+    <Fish name="fish08" min="0" max="3" random="0.55" ScenePathType="1"/>
+    <Fish name="fish09" min="0" max="3" random="0.50" ScenePathType="1"/>
+    <Fish name="fish10" min="0" max="3" random="0.50" ScenePathType="2"/>
+    <Fish name="fish11" min="0" max="1" random="0.45"/>
+  </FishKind>
+  
+  <FishKind name="Middle" min="0" max="2" random="1.0" PathType="1" >
+    <Fish name="fish12" min="0" max="1"  DuringTime="10,30"/> 
+    <Fish name="fish13" min="0" max="1"  DuringTime="20,40"/>
+    <Fish name="fish14" min="0" max="1"  DuringTime="15,35"/>
+    <Fish name="fish15" min="0" max="1"  DuringTime="25,60"/>
+  </FishKind>
+
+  <FishKind name="Large01" min="0" max="1" random="0.2" PathType="2">
+    <Fish name="fish16" min="0" max="1"  MaxTime="6" DuringTime="30,60"/>
+  </FishKind>
+  
+  <FishKind name="Large02" min="0" max="1" random="0.2" PathType="2">
+    <Fish name="fish17" min="0" max="1" MaxTime="5"  DuringTime="30,80"/>
+  </FishKind> 
+
+  <FishKind name="Large03" min="0" max="1" random="0.2" PathType="2">
+    <Fish name="fish18" min="0" max="1" MaxTime="4"  DuringTime="40,90"/>
+  </FishKind>
+
+  <!--<FishKind name="Large04" min="0" max="0" random="1" PathType="2">
+    <Fish name="fish20" min="0" max="1"  MaxTime="17"  DuringTime="12"/>
+  </FishKind>-->
+  
+  <FishKind name="Bomb" min="0" max="1" PathType="2">
+    <Fish name="DelayScopeBomb" min="0" max="1" MaxTime="2" random="0.15" DuringTime="150,250"/>
+    <Fish name="RemoteBomberFish" min="0" max="1" MaxTime="1" random="0.3" DuringTime="130,240"/>
+  </FishKind>
+
+  <FishKind name="Special" min="0" max="2" random="0.7">
+    <Fish name="ScopeBomb"  min="0" max="0"  random="0.0"  PathType="2"/>
+    <Fish name="ScreenBomb" min="0" max="0"  MaxTime="10" PathType="2" />
+    <Fish name="SameKindFish" min="0" max="2" MaxTime="7" random="0.3" DuringTime="40,75" Pa

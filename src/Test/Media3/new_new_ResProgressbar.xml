@@ -1,0 +1,11 @@
+SuperFort="SuperFort" GunLevelFort="GunLevelFort" ScoreFrame="ScoreFrame" Flag="TrackFlagList2_09" MovingFlag="TrackFlagList2_09" GoldColumn="GoldColumn"/>
+  </Player>
+  <Player name="Player20">
+    <Attribute ColorFlag="45,155,169" Fort="Fort" SuperFort="SuperFort" GunLevelFort="GunLevelFort" ScoreFrame="ScoreFrame" Flag="TrackFlagList2_10" MovingFlag="TrackFlagList2_10" GoldColumn="GoldColumn"/>
+  </Player>
+</Player>
+<Image class="QcResImageDesc">
+  <definition name="warning_ch"/>
+  <definition name="warning_en"/>
+  
+  <definition name="StartSysInfor"

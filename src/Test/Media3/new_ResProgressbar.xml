@@ -1,0 +1,15 @@
+<Image class="QcResImageDesc">
+  <definition name="warning_ch"/>
+  <definition name="warning_en"/>
+  
+  <definition name="StartSysInfor"/>
+  <definition name="StartLine"/>
+  <definition name="StartLineLabel"/>
+  <definition name="StartMatchineIdLabel"/>
+  <definition name="StartVersionLabel"/>
+  <definition name="StartTimeFormat"/>
+  <definition name="StartWeek" ListClass="QcResImageListDesc" class="QcResImageDesc"/>
+  <definition name="StartDigital" class="QcResDigitalDesc"/>
+  <definition name="StartMinius"/>
+  <definition name="StartV"/>
+</Image>

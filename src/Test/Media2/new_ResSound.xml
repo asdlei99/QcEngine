@@ -1,0 +1,109 @@
+<Sound>
+  <Sound name="bg_01" ext="mp3" MaxBuf="1"/>
+  <Sound name="bg_02" ext="mp3" MaxBuf="1"/>
+  <Sound name="bg_03" ext="mp3" MaxBuf="1"/>
+  <Sound name="LogoSound1" ext="mp3" MaxBuf="2" />
+  <Sound name="LogoSound2" ext="mp3" MaxBuf="2" />
+  <!--Fish-->
+  <Sound name="SameKindFishDyingSound" ext="mp3" MaxBuf="3" />
+  <Sound name="SameKindBombSound" ext="mp3" MaxBuf="3" />
+  <Sound name="DelayBombSound" ext="mp3" MaxBuf="3" />
+  <Sound name="ScopeBombSound" ext="mp3" MaxBuf="2" />
+  <Sound name="ScreenBombSound" ext="mp3" MaxBuf="2" />
+  <Sound name="LargeFishSound" ext="mp3" MaxBuf="2" />
+  <Sound name="FishDieSound" ext="mp3" MaxBuf="10" />
+  <Sound name="CatchGambleFish" ext="mp3" MaxBuf="2" />
+  <Sound name="CatchGambleFish2" ext="mp3" MaxBuf="2" />
+  <Sound name="CatchGambleFish3" ext="mp3" MaxBuf="2" />
+  <Sound name="mcv01" ext="mp3" MaxBuf="5" />
+  <Sound name="mcv02" ext="mp3" MaxBuf="5" />
+  <Sound name="mcv03" ext="mp3" MaxBuf="5" />
+  <Sound name="mcv04" ext="mp3" MaxBuf="5" />
+  <Sound name="mcv05" ext="mp3" MaxBuf="5" />
+  <Sound name="mcv06" ext="mp3" MaxBuf="5" />
+  <Sound name="mcv07" ext="mp3" MaxBuf="5" />
+  <Sound name="mcv08" ext="mp3" MaxBuf="5" />
+  <Sound name="mcv09" ext="mp3" MaxBuf="5" />
+  <Sound name="wcv01" ext="mp3" MaxBuf="5" />
+  <Sound name="wcv02" ext="mp3" MaxBuf="5" />
+  <Sound name="wcv03" ext="mp3" MaxBuf="5" />
+  <Sound name="wcv04" ext="mp3" MaxBuf="5" />
+  <Sound name="wcv05" ext="mp3" MaxBuf="5" />
+  <Sound name="wcv06" ext="mp3" MaxBuf="5" />
+  <Sound name="wcv07" ext="mp3" MaxBuf="5" />
+  <Sound name="wcv08" ext="mp3" MaxBuf="5" />
+  <Sound name="wcv09" ext="mp3" MaxBuf="5" />
+  <Sound name="BombBefore" ext="mp3" MaxBuf="2" />
+  <Sound name="BombBefore2" ext="mp3" MaxBuf="2" />
+  <Sound name="GambleFishBig" ext="mp3" MaxBuf="5" />
+  <Sound name="GambleFishBgm" ext="wav" MaxBuf="1" />
+  <Sound name="GambleFishSmaller" ext="mp3" MaxBuf="5" />
+  <Sound name="GambleFishFail" ext="mp3" MaxBuf="5" />
+  <Sound name="GambleFishSuccess" ext="mp3" MaxBuf="5" />
+  <Sound name="GambleFishSelect" ext="mp3" MaxBuf="5" />
+  <Sound name="GambleFishSelect2" ext="mp3" MaxBuf="5" />
+  <Sound name="GambleFishSelect3" ext="mp3" MaxBuf="5" />
+  <Sound name="GambleFishSelect4" ext="mp3" MaxBuf="5" />
+  <Sound name="GambleFishPlayerLose01" ext="mp3" MaxBuf="5" />
+  <Sound name="GambleFishPlayerLose02" ext="mp3" MaxBuf="5" />
+  <Sound name="GambleFishPlayerWin01" ext="mp3" MaxBuf="5" />
+  <Sound name="GambleFishPlayerWin02" ext="mp3" MaxBuf="5" />
+  <Sound name="GambleFishPlayerWin03" ext="mp3" MaxBuf="5" />
+  <Sound name="GambleFishPlayerWin04" ext="mp3" MaxBuf="5" />
+  <Sound name="GambleFishPlayerWin05" ext="mp3" MaxBuf="5" />
+  <Sound name="GambleFishPlayerWin06" ext="mp3" MaxBuf="5" />
+  <Sound name="GambleFishPlayerWin07" ext="mp3" MaxBuf="5" />
+  <Sound name="GambleFishPlayerWin08" ext="mp3" MaxBuf="5" />
+  <Sound name="GambleFishPlayerWin09" ext="mp3" MaxBuf="5" />
+  <Sound name="GambleFishPlayerWin10" ext="mp3" MaxBuf="5" />
+  <Sound name="GambleFishPlayerWin11" ext="mp3" MaxBuf="5" />
+  <Sound name="GambleFishPlayerWin12" ext="mp3" MaxBuf="5" />
+  <Sound name="GambleFishMusic001" ext="mp3" MaxBuf="5" />
+  <Sound name="GambleFishMusic002" ext="mp3" MaxBuf="5" />
+  <Sound name="GambleFishMusic003" ext="mp3" MaxBuf="5" />
+  <Sound name="GambleFishMusic004" ext="mp3" MaxBuf="5" />
+  <Sound name="GambleFishMusic005" ext="mp3" MaxBuf="5" />
+  <Sound name="GambleFishMusic006" ext="mp3" MaxBuf="5" />
+  <Sound name="GambleFishMusic007" ext="mp3" MaxBuf="5" />
+  <Sound name="GambleFishMusic008" ext="mp3" MaxBuf="5" />
+  <Sound name="GambleFishEndAndAddScore" ext="wav" MaxBuf="5" />
+  <Sound name="GambleFishDice" ext="mp3" MaxBuf="2" />
+  <Sound name="GambleFishChosen" ext="mp3" MaxBuf="2" />
+  
+  <!--player-->
+  <Sound name="BombTips1" ext="mp3" MaxBuf="10" />
+  <Sound name="BombTips11" ext="mp3" MaxBuf="10" />
+  <Sound name="BombTips2" ext="mp3" MaxBuf="10" />
+  <Sound name="BombTips21" ext="mp3" MaxBuf="10" />
+  <Sound name="BombCounter10" ext="mp3" MaxBuf="2" />
+  <Sound name="BombCounter1" ext="mp3" MaxBuf="2" />
+  <Sound name="BombCounter2" ext="mp3" MaxBuf="2" />
+  <Sound name="BombCounter3" ext="mp3" MaxBuf="2" />
+  <Sound name="BombCounter4" ext="mp3" MaxBuf="2" />
+  <Sound name="BombCounter5" ext="mp3" MaxBuf="2" />
+  <Sound name="BombAppear" ext="mp3" MaxBuf="2" />
+  <Sound name="BombRopeBurn" ext="mp3" MaxBuf="2" />
+  <Sound name="AddGunLevelSound" ext="mp3" MaxBuf="10" />
+  <Sound name="InScore" ext="mp3" MaxBuf="10" />
+  <Sound name="OutScore" ext="mp3" MaxBuf="10" />
+  <Sound name="MakeCoinSound" ext="mp3" MaxBuf="10" />
+  <Sound name="NormalFireSound" ext="mp3" MaxBuf="30" />
+  <Sound name="HitFishSound" ext="mp3" MaxBuf="10" />
+  <Sound name="ShowCoinColumnSound" ext="mp3" MaxBuf="10" />
+  <Sound name="CaiJinSound" ext="mp3" MaxBuf="10" />
+  
+  <Sound name="SuperGunFireSound" ext="mp3" MaxBuf="10" />
+  <Sound name="SuperGunShowSound" ext="mp3" MaxBuf="10" />
+  <Sound name="SuperGunGainSound" ext="mp3" MaxBuf="10" />
+  <Sound name="SwitchGunSound" ext="mp3" MaxBuf="10" />
+  <Sound name="SpecialBombApear" ext="mp3" MaxBuf="10" />
+  
+  <Sound name="ChainLinkStart" ext="mp3" MaxBuf="10" />  
+  <Sound name="NextChain" ext="mp3" MaxBuf="10" />  
+  <Sound name="ChainEnd" ext="mp3" MaxBuf="10" />  
+  
+  <Sound name="ScoreStartJump" ext="mp3" MaxBuf="10" />
+  <Sound name="ScoreJumpPause" ext="mp3" MaxBuf="10" />
+  <Sound name="ScoreJumping" ext="mp3" MaxBuf="10" />
+  <Sound name="ScoreJumpEnd" ext="mp3" MaxBuf="10" />
+</Sound>
