@@ -82,18 +82,6 @@
     <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='TestRelease|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
     <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='TestRelease|Win32'" />
     <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='TestRelease|Win32'" />
-    <ExecutablePath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(DXSDK_DIR)Utilities\bin\x86;$(ExecutablePath)</ExecutablePath>
-    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(DXSDK_DIR)Include;$(IncludePath)</IncludePath>
-    <ExecutablePath Condition="'$(Configuration)|$(Platform)'=='IOTestRelease|Win32'">$(DXSDK_DIR)Utilities\bin\x86;$(ExecutablePath)</ExecutablePath>
-    <IncludePath Condition="'$(Configuration)|$(Platform)'=='IOTestRelease|Win32'">$(DXSDK_DIR)Include;$(IncludePath)</IncludePath>
-    <ExecutablePath Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(DXSDK_DIR)Utilities\bin\x86;$(ExecutablePath)</ExecutablePath>
-    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(DXSDK_DIR)Include;$(IncludePath)</IncludePath>
-    <ExecutablePath Condition="'$(Configuration)|$(Platform)'=='TestRelease|Win32'">$(DXSDK_DIR)Utilities\bin\x86;$(ExecutablePath)</ExecutablePath>
-    <IncludePath Condition="'$(Configuration)|$(Platform)'=='TestRelease|Win32'">$(DXSDK_DIR)Include;$(IncludePath)</IncludePath>
-    <LibraryPath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(DXSDK_DIR)Lib\x86;$(LibraryPath)</LibraryPath>
-    <LibraryPath Condition="'$(Configuration)|$(Platform)'=='IOTestRelease|Win32'">$(DXSDK_DIR)Lib\x86;$(LibraryPath)</LibraryPath>
-    <LibraryPath Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(DXSDK_DIR)Lib\x86;$(LibraryPath)</LibraryPath>
-    <LibraryPath Condition="'$(Configuration)|$(Platform)'=='TestRelease|Win32'">$(DXSDK_DIR)Lib\x86;$(LibraryPath)</LibraryPath>
     <EmbedManifest Condition="'$(Configuration)|$(Platform)'=='IOTestRelease|Win32'">true</EmbedManifest>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -101,7 +89,7 @@
       <Optimization>Disabled</Optimization>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
-      <AdditionalIncludeDirectories>$(SolutionDir)DXUT\Include;$(SolutionDir)..\Dependent\magic;$(SolutionDir)..\Dependent\fmod\include;$(SolutionDir)..\Dependent;.\Source;$(SolutionDir)Vld\Include;$(SolutionDir)ImageLoader\Include;$(SolutionDir)QcCore;.\PCH</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)DXUT\Include;$(SolutionDir)..\Dependent\magic;$(SolutionDir)..\Dependent\fmod\include;$(SolutionDir)..\Dependent\directx-jun2010\include;$(SolutionDir)..\Dependent;.\Source;$(SolutionDir)Vld\Include;$(SolutionDir)ImageLoader\Include;$(SolutionDir)QcCore;.\PCH</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;CATCHFISH_EXPORT;QmTestVersion;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <StringPooling>true</StringPooling>
       <ExceptionHandling>Async</ExceptionHandling>
@@ -113,7 +101,7 @@
       <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
     </ClCompile>
     <Link>
-      <AdditionalLibraryDirectories>$(SolutionDir)output\Bin\$(Configuration);$(SolutionDir)..\Dependent\magic;$(SolutionDir)..\Dependent\fmod\lib;$(SolutionDir)..\Dependent\libtcmalloc\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(SolutionDir)output\Bin\$(Configuration);$(SolutionDir)..\Dependent\magic;$(SolutionDir)..\Dependent\fmod\lib;$(SolutionDir)..\Dependent\libtcmalloc\$(Configuration);$(SolutionDir)..\Dependent\directx-jun2010\lib\release\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <GenerateMapFile>false</GenerateMapFile>
       <SubSystem>Windows</SubSystem>
@@ -126,7 +114,8 @@
     <PostBuildEvent>
       <Command>copy "$(SolutionDir)..\Dependent\fmod\bin\*.dll" "$(SolutionDir)..\Output\Bin\$(Configuration)" /y
 copy "$(SolutionDir)..\Dependent\libtcmalloc\$(Configuration)\*.dll" "$(SolutionDir)..\Output\Bin\$(Configuration)" /y
-copy "$(SolutionDir)..\Dependent\magic\*.dll" "$(SolutionDir)..\Output\Bin\$(Configuration)" /y</Command>
+copy "$(SolutionDir)..\Dependent\magic\*.dll" "$(SolutionDir)..\Output\Bin\$(Configuration)" /y
+copy "$(SolutionDir)..\Dependent\directx-jun2010\bin\release\*.dll" "$(SolutionDir)..\Output\Bin\$(Configuration)" /y</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -135,7 +124,7 @@ copy "$(SolutionDir)..\Dependent\magic\*.dll" "$(SolutionDir)..\Output\Bin\$(Con
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
       <WholeProgramOptimization>false</WholeProgramOptimization>
-      <AdditionalIncludeDirectories>$(SolutionDir)DXUT\Include;$(SolutionDir)..\Dependent\magic;$(SolutionDir)..\Dependent\fmod\include;$(SolutionDir)..\Dependent;.\Source;$(SolutionDir)Vld\Include;$(SolutionDir)ImageLoader\Include;$(SolutionDir)QcCore;.\PCH</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)DXUT\Include;$(SolutionDir)..\Dependent\magic;$(SolutionDir)..\Dependent\fmod\include;$(SolutionDir)..\Dependent\directx-jun2010\include;$(SolutionDir)..\Dependent;.\Source;$(SolutionDir)Vld\Include;$(SolutionDir)ImageLoader\Include;$(SolutionDir)QcCore;.\PCH</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;CATCHFISH_EXPORT;QmTestVersion;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <StringPooling>true</StringPooling>
       <ExceptionHandling>Async</ExceptionHandling>
@@ -147,7 +136,7 @@ copy "$(SolutionDir)..\Dependent\magic\*.dll" "$(SolutionDir)..\Output\Bin\$(Con
       </DebugInformationFormat>
     </ClCompile>
     <Link>
-      <AdditionalLibraryDirectories>$(SolutionDir)output\Bin\$(Configuration);$(SolutionDir)..\Dependent\magic;$(SolutionDir)..\Dependent\fmod\lib;$(SolutionDir)..\Dependent\libtcmalloc\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(SolutionDir)output\Bin\$(Configuration);$(SolutionDir)..\Dependent\magic;$(SolutionDir)..\Dependent\fmod\lib;$(SolutionDir)..\Dependent\libtcmalloc\$(Configuration);$(SolutionDir)..\Dependent\directx-jun2010\lib\release\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <GenerateMapFile>false</GenerateMapFile>
       <SubSystem>Windows</SubSystem>
@@ -160,7 +149,8 @@ copy "$(SolutionDir)..\Dependent\magic\*.dll" "$(SolutionDir)..\Output\Bin\$(Con
     <PostBuildEvent>
       <Command>copy "$(SolutionDir)..\Dependent\fmod\bin\*.dll" "$(SolutionDir)..\Output\Bin\$(Configuration)" /y
 copy "$(SolutionDir)..\Dependent\libtcmalloc\$(Configuration)\*.dll" "$(SolutionDir)..\Output\Bin\$(Configuration)" /y
-copy "$(SolutionDir)..\Dependent\magic\*.dll" "$(SolutionDir)..\Output\Bin\$(Configuration)" /y</Command>
+copy "$(SolutionDir)..\Dependent\magic\*.dll" "$(SolutionDir)..\Output\Bin\$(Configuration)" /y
+copy "$(SolutionDir)..\Dependent\directx-jun2010\bin\release\*.dll" "$(SolutionDir)..\Output\Bin\$(Configuration)" /y</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='TestRelease|Win32'">
@@ -168,7 +158,7 @@ copy "$(SolutionDir)..\Dependent\magic\*.dll" "$(SolutionDir)..\Output\Bin\$(Con
       <Optimization>Disabled</Optimization>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
-      <AdditionalIncludeDirectories>$(SolutionDir)DXUT\Include;$(SolutionDir)..\Dependent\magic;$(SolutionDir)..\Dependent\fmod\include;$(SolutionDir)..\Dependent;.\Source;$(SolutionDir)Vld\Include;$(SolutionDir)ImageLoader\Include;$(SolutionDir)QcCore;.\PCH</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)DXUT\Include;$(SolutionDir)..\Dependent\magic;$(SolutionDir)..\Dependent\fmod\include;$(SolutionDir)..\Dependent\directx-jun2010\include;$(SolutionDir)..\Dependent;.\Source;$(SolutionDir)Vld\Include;$(SolutionDir)ImageLoader\Include;$(SolutionDir)QcCore;.\PCH</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;CATCHFISH_EXPORT;QmTestVersion;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <StringPooling>true</StringPooling>
       <ExceptionHandling>Async</ExceptionHandling>
@@ -180,7 +170,7 @@ copy "$(SolutionDir)..\Dependent\magic\*.dll" "$(SolutionDir)..\Output\Bin\$(Con
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
     </ClCompile>
     <Link>
-      <AdditionalLibraryDirectories>$(SolutionDir)output\Bin\$(Configuration);$(SolutionDir)..\Dependent\magic;$(SolutionDir)..\Dependent\fmod\lib;$(SolutionDir)..\Dependent\libtcmalloc\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(SolutionDir)output\Bin\$(Configuration);$(SolutionDir)..\Dependent\magic;$(SolutionDir)..\Dependent\fmod\lib;$(SolutionDir)..\Dependent\libtcmalloc\$(Configuration);$(SolutionDir)..\Dependent\directx-jun2010\lib\release\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <LinkTimeCodeGeneration>
       </LinkTimeCodeGeneration>
@@ -188,7 +178,8 @@ copy "$(SolutionDir)..\Dependent\magic\*.dll" "$(SolutionDir)..\Output\Bin\$(Con
     <PostBuildEvent>
       <Command>copy "$(SolutionDir)..\Dependent\fmod\bin\*.dll" "$(SolutionDir)..\Output\Bin\$(Configuration)" /y
 copy "$(SolutionDir)..\Dependent\libtcmalloc\$(Configuration)\*.dll" "$(SolutionDir)..\Output\Bin\$(Configuration)" /y
-copy "$(SolutionDir)..\Dependent\magic\*.dll" "$(SolutionDir)..\Output\Bin\$(Configuration)" /y</Command>
+copy "$(SolutionDir)..\Dependent\magic\*.dll" "$(SolutionDir)..\Output\Bin\$(Configuration)" /y
+copy "$(SolutionDir)..\Dependent\directx-jun2010\bin\release\*.dll" "$(SolutionDir)..\Output\Bin\$(Configuration)" /y</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='IOTestRelease|Win32'">
@@ -197,7 +188,7 @@ copy "$(SolutionDir)..\Dependent\magic\*.dll" "$(SolutionDir)..\Output\Bin\$(Con
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
       <WholeProgramOptimization>false</WholeProgramOptimization>
-      <AdditionalIncludeDirectories>$(SolutionDir)DXUT\Include;$(SolutionDir)..\Dependent\magic;$(SolutionDir)..\Dependent\fmod\include;$(SolutionDir)..\Dependent;.\Source;$(SolutionDir)Vld\Include;$(SolutionDir)ImageLoader\Include;$(SolutionDir)QcCore;.\PCH</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)DXUT\Include;$(SolutionDir)..\Dependent\magic;$(SolutionDir)..\Dependent\fmod\include;$(SolutionDir)..\Dependent\directx-jun2010\include;$(SolutionDir)..\Dependent;.\Source;$(SolutionDir)Vld\Include;$(SolutionDir)ImageLoader\Include;$(SolutionDir)QcCore;.\PCH</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;CATCHFISH_EXPORT;QmTestVersion;QmIOUsbOn;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <StringPooling>true</StringPooling>
       <ExceptionHandling>Async</ExceptionHandling>
@@ -208,7 +199,7 @@ copy "$(SolutionDir)..\Dependent\magic\*.dll" "$(SolutionDir)..\Output\Bin\$(Con
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
     </ClCompile>
     <Link>
-      <AdditionalLibraryDirectories>$(SolutionDir)output\Bin\$(Configuration);$(SolutionDir)..\Dependent\magic;$(SolutionDir)..\Dependent\fmod\lib;$(SolutionDir)..\Dependent\libtcmalloc\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(SolutionDir)output\Bin\$(Configuration);$(SolutionDir)..\Dependent\magic;$(SolutionDir)..\Dependent\fmod\lib;$(SolutionDir)..\Dependent\libtcmalloc\$(Configuration);$(SolutionDir)..\Dependent\directx-jun2010\lib\release\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <LinkTimeCodeGeneration>
       </LinkTimeCodeGeneration>
@@ -216,7 +207,8 @@ copy "$(SolutionDir)..\Dependent\magic\*.dll" "$(SolutionDir)..\Output\Bin\$(Con
     <PostBuildEvent>
       <Command>copy "$(SolutionDir)..\Dependent\fmod\bin\*.dll" "$(SolutionDir)..\Output\Bin\$(Configuration)" /y
 copy "$(SolutionDir)..\Dependent\libtcmalloc\$(Configuration)\*.dll" "$(SolutionDir)..\Output\Bin\$(Configuration)" /y
-copy "$(SolutionDir)..\Dependent\magic\*.dll" "$(SolutionDir)..\Output\Bin\$(Configuration)" /y</Command>
+copy "$(SolutionDir)..\Dependent\magic\*.dll" "$(SolutionDir)..\Output\Bin\$(Configuration)" /y
+copy "$(SolutionDir)..\Dependent\directx-jun2010\bin\release\*.dll" "$(SolutionDir)..\Output\Bin\$(Configuration)" /y</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
