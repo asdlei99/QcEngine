@@ -8,13 +8,13 @@
 struct QsFishPool;
 class QcSameKindBombFish : public QcBombFish
 {
-	typedef struct QsSameKindFishInfo
+	struct QsSameKindFishInfo
 	{
 		QcFishPtr m_pFish;
 		QcSceneAnimationPtr m_pIceNode;
 		QcSceneAnimationPtr m_pScore;
 	};
-	DeclareRuntimeClass(QcSameKindBombFish);
+    DeclareRuntimeClass(QcSameKindBombFish);
 public:
 	QcSameKindBombFish(QcResFishDesc* pFishDesc = NULL);
 	~QcSameKindBombFish();

@@ -4,7 +4,7 @@
 
 class QcAccountShowDlg : public QcDialog
 {
-	DeclareRuntimeClass(QcAccountShowDlg)
+    DeclareRuntimeClass(QcAccountShowDlg);
 public:
 	QcAccountShowDlg();
 

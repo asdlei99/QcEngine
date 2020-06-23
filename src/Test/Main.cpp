@@ -21,7 +21,7 @@
 #include <sstream>
 #include <fstream>
 #include <strstream>
-#include <hash_map>
+#include <unordered_map>
 #include <map>
 #include <set>
 #include <vector>
@@ -99,7 +99,9 @@ int TestNoScalarType()
 }
 
 //RegisterScalarType
+#if _MSC_VER < 1900 
 QmRegisterScalarType(QsScalarType);
+#endif
 int TestScalarType()
 {
 	std::vector<QsScalarType> garScalarType;

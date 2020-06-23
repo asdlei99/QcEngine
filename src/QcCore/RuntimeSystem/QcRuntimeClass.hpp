@@ -114,7 +114,7 @@ public:\
 		RuntimeClass()->Deallocate(p);\
 	}\
 private:\
-	static QcRuntimeClass gsClass##class_name;
+	static QcRuntimeClass gsClass##class_name
 
 #define ImplRuntimeClass2(class_name, size) QcRuntimeClass class_name::gsClass##class_name(#class_name, class_name::CreateObject, sizeof(class_name), size)
 #define ImplRuntimeClass(class_name) QcRuntimeClass class_name::gsClass##class_name(#class_name, class_name::CreateObject)

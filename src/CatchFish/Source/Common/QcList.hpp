@@ -11,7 +11,7 @@ public:
 	{
 		friend class QcList<T>;
 	private:
-		QmDisableCopyAssignment(Tracker);
+		QmDisableCopyAssignment(Tracker)
 	public:
 		Tracker(QcList<T>& l) : m_list(l), m_arRemoveIdx(NULL), m_sBuf(NULL)
 		{
@@ -66,19 +66,19 @@ public:
 				}
 			}
 		}
-		vector<T>::iterator begin()
+        typename vector<T>::iterator begin()
 		{
 			return m_list.begin();
 		}
-		vector<T>::const_iterator begin() const
+        typename vector<T>::const_iterator begin() const
 		{
 			return m_list.begin();
 		}
-		vector<T>::iterator end()
+        typename vector<T>::iterator end()
 		{
 			return m_list.end();
 		}
-		vector<T>::const_iterator end() const
+        typename vector<T>::const_iterator end() const
 		{
 			return m_list.end();
 		}
